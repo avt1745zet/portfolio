@@ -1,0 +1,54 @@
+﻿body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#background {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-image: url(../img/rosie-fraser-187327-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -999;
+}
+
+.navbar .active {
+    border-bottom: 1px solid white;
+}
+
+#copyright {
+    text-align: center;
+}
+
+    #copyright::before {
+        content: "©2019 羊羽的小窩.";
+        color: white;
+    }
+
+    #copyright::after {
+        content: " All Rights Reserved.";
+        color: white;
+    }
+
+.fill {
+    height: 100%;
+    width: 100%;
+}
+
+.bg-black-30 {
+    background-color: rgba(0,0,0,.3);
+}
+
+.text-nobreak {
+    display: inline-block;
+}
+/*portfolio*/
+.workselector:hover {
+    text-decoration: none;
+}
+
+.portfolio-title {
+    z-index: 1;
+}
