@@ -1,19 +1,21 @@
-import React, { HTMLAttributes } from "react";
-import { Col, Row } from "react-bootstrap";
+import React from "react";
+import { Col, Container, ContainerProps, Row } from "react-bootstrap";
 
-const Contact = (props: HTMLAttributes<HTMLElement>) => {
+const Contact = (props: ContainerProps) => {
 	const {...other} = props;
 	return (
-		<Row {...other} className="text-light">
-			<Col sm={12}>
-				<h2 className="text-center" >
+		<Container {...other}>
+			<Row {...other} className="text-light">
+				<Col sm={12}>
+					<h2 className="text-center" >
                     Contact
-				</h2>
-				<p>
+					</h2>
+					<p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non unde, quibusdam dolorem error magni numquam aliquid nam odit veniam esse? Velit ratione perspiciatis qui excepturi earum tempora, eius mollitia impedit!
-				</p>
-			</Col>
-		</Row>
+					</p>
+				</Col>
+			</Row>
+		</Container>
 	);
 };
 

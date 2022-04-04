@@ -1,11 +1,11 @@
-import React, { Fragment, HTMLAttributes } from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import React from "react";
+import { Col, Container, ContainerProps, Image, Row } from "react-bootstrap";
 import AvatarImage from "./../../../res/avatar.png";
 
-const Overview = (props: HTMLAttributes<HTMLElement>) => {
+const Overview = (props: ContainerProps) => {
 	const {...other} = props;
 	return (
-		<Fragment>
+		<Container {...other}>
 			<Row {...other} className="text-light justify-content-sm-center justify-content-md-start" 
 				style={{
 					paddingTop: "70px" /** Height of navbar */
@@ -27,7 +27,7 @@ const Overview = (props: HTMLAttributes<HTMLElement>) => {
 					</p>
 				</Col>
 			</Row>
-		</Fragment>
+		</Container>
 	);
 };
 

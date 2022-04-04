@@ -10,6 +10,19 @@ const MainPage = () => {
 	return (
 		<Fragment>
 			{/** Navbar */}
+			<style type="text/css">
+				{/** Prevent navbar cover the section content */}
+				{`
+		 			section:target::before {
+						display: block; 
+						content: " "; 
+						margin-top: -70px; 
+						height: 70px; 
+						visibility: hidden; 
+						pointer-events: none;
+		  			}
+		  		`}
+			</style>
 			<Navbar fixed="top" expand="md" bg="dark" variant="dark">
 				<Container>
 					<Navbar.Brand>
@@ -37,14 +50,12 @@ const MainPage = () => {
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
-			<Container 
-				as="main" 
-			>
-				<Overview id="overview"/>
-				<Skills id="skills"/>
-				<Experiences id="experiences"/>
-				<Projects id="projects"/>
-				<Contact id="contact"/>
+			<Container as="main">
+				<Overview as="section" id="overview"/>
+				<Skills as="section" id="skills"/>
+				<Experiences as="section" id="experiences"/>
+				<Projects as="section" id="projects"/>
+				<Contact as="section" id="contact"/>
 			</Container>
 		</Fragment>
 	);
