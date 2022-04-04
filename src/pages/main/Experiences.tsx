@@ -1,10 +1,14 @@
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import { Col, Row } from "react-bootstrap";
 
-const Experiences = () => {
+const Experiences = (props: HTMLAttributes<HTMLElement>) => {
+	const {...other} = props;
 	return (
-		<Row className="text-light">
+		<Row {...other} className="text-light">
 			<Col xs={12}>
+				<h2 className="text-center" >
+                    Experiences
+				</h2>
 				<p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestias vero incidunt maiores natus adipisci fugiat consectetur, quam exercitationem illum iste iusto? Repudiandae, vitae est, aliquam placeat libero quisquam aspernatur delectus dolore corrupti blanditiis dicta debitis amet mollitia voluptates perspiciatis! Est enim aliquam esse cum magnam asperiores velit nesciunt ut.
 				</p>

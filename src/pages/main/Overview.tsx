@@ -1,12 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment, HTMLAttributes } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import AvatarImage from "./../../../res/avatar.png";
 
-
-const Overview = () => {
+const Overview = (props: HTMLAttributes<HTMLElement>) => {
+	const {...other} = props;
 	return (
 		<Fragment>
-			<Row className="text-light justify-content-sm-center justify-content-md-start">
+			<Row {...other} className="text-light justify-content-sm-center justify-content-md-start" 
+				style={{
+					paddingTop: "70px" /** Height of navbar */
+				}}>
 				{/** Avatar */}
 				<Col md={4} lg={3}>
 					<Image src={AvatarImage} roundedCircle className="mx-auto d-block"/>

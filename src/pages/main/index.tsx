@@ -18,19 +18,19 @@ const MainPage = () => {
 					<Navbar.Toggle />
 					<Navbar.Collapse className="justify-content-end">
 						<Nav>
-							<Nav.Link>
+							<Nav.Link href="#overview">
 								Overview
 							</Nav.Link>
-							<Nav.Link>
+							<Nav.Link href="#skills">
 								Skills
 							</Nav.Link>
-							<Nav.Link>
+							<Nav.Link href="#experiences">
 								Experiences
 							</Nav.Link>
-							<Nav.Link>
+							<Nav.Link href="#projects">
 								Projects
 							</Nav.Link>
-							<Nav.Link>
+							<Nav.Link href="#contact">
 								Contacts
 							</Nav.Link>
 						</Nav>
@@ -39,15 +39,12 @@ const MainPage = () => {
 			</Navbar>
 			<Container 
 				as="main" 
-				style={{
-					paddingTop: "70px" /** Height of navbar */
-				}}
 			>
-				<Overview/>
-				<Skills/>
-				<Experiences/>
-				<Projects/>
-				<Contact/>
+				<Overview id="overview"/>
+				<Skills id="skills"/>
+				<Experiences id="experiences"/>
+				<Projects id="projects"/>
+				<Contact id="contact"/>
 			</Container>
 		</Fragment>
 	);
