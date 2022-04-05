@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import Overview from "./Overview";
 import Skills from "./Skills";
@@ -7,6 +7,25 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 
 const MainPage = () => {
+	const [navbarExpanded, setNavbarExpanded] = useState(false);
+	const handleNavbarSelect = () => {
+		setNavbarExpanded(false);
+	};
+	const handleNavbarBrandClick = () => {
+		setNavbarExpanded(false);
+	};
+	const handleNavbarToggleClick = () => {
+		setNavbarExpanded(!navbarExpanded);
+	};
+	useEffect(() => {
+		const scrollEventListener = () => {
+			setNavbarExpanded(false);
+		};
+		addEventListener("scroll", scrollEventListener);
+		return () => {
+			removeEventListener("scroll", scrollEventListener);
+		};
+	}, []);
 	return (
 		<Fragment>
 			{/** Navbar */}
@@ -23,17 +42,21 @@ const MainPage = () => {
 		  			}
 		  		`}
 			</style>
-			<Navbar fixed="top" expand="md" bg="dark" variant="dark">
+			<Navbar 
+				expanded={navbarExpanded} 
+				onSelect={handleNavbarSelect} 
+				fixed="top" 
+				expand="md" 
+				bg="dark" 
+				variant="dark"
+			>
 				<Container>
-					<Navbar.Brand>
+					<Navbar.Brand onClick={handleNavbarBrandClick} href="#overview">
 						Portfolio
 					</Navbar.Brand>
-					<Navbar.Toggle />
+					<Navbar.Toggle onClick={handleNavbarToggleClick}/>
 					<Navbar.Collapse className="justify-content-end">
 						<Nav>
-							<Nav.Link href="#overview">
-								Overview
-							</Nav.Link>
 							<Nav.Link href="#skills">
 								Skills
 							</Nav.Link>
