@@ -5,11 +5,12 @@ import AvatarImage from "./../../../res/avatar.png";
 const Overview = (props: ContainerProps) => {
 	const {...other} = props;
 	return (
-		<Container {...other}>
-			<Row {...other} className="text-light justify-content-sm-center justify-content-md-start" 
+		<Container {...other} className="text-light">
+			<Row className="justify-content-sm-center justify-content-md-start" 
 				style={{
 					paddingTop: "70px" /** Height of navbar */
-				}}>
+				}}
+			>
 				{/** Avatar */}
 				<Col md={4} lg={3}>
 					<Image src={AvatarImage} roundedCircle className="mx-auto d-block"/>
