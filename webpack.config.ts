@@ -27,8 +27,14 @@ const config: webpack.Configuration = {
 				use: ["style-loader", "css-loader"],
 			},
 			{
-				test: /\.png/,
+				test: /\.png$/i,
 				type: "asset/resource"
+			},
+			{
+				test: /\.svg$/i,
+				use: {
+					loader: "svg-react-loader"
+				},
 			}
 		],
 	},
