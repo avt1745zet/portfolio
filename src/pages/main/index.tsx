@@ -47,7 +47,7 @@ const MainPage = () => {
 				onSelect={handleNavbarSelect} 
 				fixed="top" 
 				expand="md" 
-				bg="dark" 
+				bg="black" 
 				variant="dark"
 			>
 				<Container>
