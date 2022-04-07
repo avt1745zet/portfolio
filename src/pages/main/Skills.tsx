@@ -1,9 +1,54 @@
-import React from "react";
-import { Col, Container, ContainerProps, Image, Row, Stack } from "react-bootstrap";
-import SkillIcon from "./../../../res/avatar.png";
+import React, { ReactElement } from "react";
+import { Col, Container, ContainerProps, Row, Stack } from "react-bootstrap";
+import TypescriptLogo from "./../../../res/skillIcons/typescript-logo.svg";
+import PixijsLogo from "./../../../res/skillIcons/pixijs-text.svg";
+import UnityLogo from "./../../../res/skillIcons/unity-logo.svg";
+import ReactLogo from "./../../../res/skillIcons/react-logo.svg";
+import WebpackLogo from "./../../../res/skillIcons/webpack-logo.svg";
+import HtmlLogo from "./../../../res/skillIcons/html5-logo.svg";
+import CssLogo from "./../../../res/skillIcons/css3-logo.svg";
 
 const Skills = (props: ContainerProps) => {
 	const {...other} = props;
+	const gameDevSkillData: Array<ISkillInfo> = new Array<ISkillInfo>(
+		{
+			name: "Typecript",
+			description: "I use Typecript to develop the HTML5 games.",
+			icon: <TypescriptLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+		},
+		{
+			name: "Pixi.js",
+			description: "I use Pixi.js to develop the HTML5 games.",
+			icon: <PixijsLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+		},
+		{
+			name: "Unity",
+			description: "I use Unity to develop some 3D game.",
+			icon: <UnityLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+		}
+	);
+	const webDevSkillData: Array<ISkillInfo> = new Array<ISkillInfo>(
+		{
+			name: "React.js",
+			description: "I use React to develop the web.",
+			icon: <ReactLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+		},
+		{
+			name: "Webpack",
+			description: "I use Webpack to bundle the code.",
+			icon: <WebpackLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+		},
+		{
+			name: "HTML",
+			description: "I use html to built website.",
+			icon: <HtmlLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+		},
+		{
+			name: "CSS",
+			description: "I use css to decorate website.",
+			icon: <CssLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+		}
+	);
 	return(
 		<Container {...other} className="text-light">
 			<Container as="header">
@@ -13,43 +58,18 @@ const Skills = (props: ContainerProps) => {
 			</Container>
 			<Row className="gy-3">
 				<Col md={6}>
-					<Stack gap={1}>
-						<div className="d-flex align-items-center" style={{
-							columnGap: "5px"
-						}}>
-							<Image src={SkillIcon} roundedCircle style={{
-								width: "6rem",
-								height: "6rem"
-							}}/>
-							<div>
-								<h5>Typecript</h5>
-								<p>I use Typecript to develop the HTML5 games.</p>
-							</div>
-						</div>
-						<div className="d-flex align-items-center" style={{
-							columnGap: "5px"
-						}}>
-							<Image src={SkillIcon} roundedCircle style={{
-								width: "6rem",
-								height: "6rem"
-							}}/>
-							<div>
-								<h5>Pixi.js</h5>
-								<p>I use Pixi.js to develop the HTML5 games.</p>
-							</div>
-						</div>
-						<div className="d-flex align-items-center" style={{
-							columnGap: "5px"
-						}}>
-							<Image src={SkillIcon} roundedCircle style={{
-								width: "6rem",
-								height: "6rem"
-							}}/>
-							<div>
-								<h5>Tween.js</h5>
-								<p>I use Tween.js to implement some smooth motion.</p>
-							</div>
-						</div>
+					<Stack gap={3}>
+						{
+							gameDevSkillData.map((data, index)=>(
+								<div key={index} className="d-flex align-items-center gap-3">
+									{data.icon}
+									<div>
+										<h5>{data.name}</h5>
+										<p>{data.description}</p>
+									</div>
+								</div>
+							))
+						}
 					</Stack>
 				</Col>
 				<Col md={6} className="my-md-auto">
@@ -61,43 +81,18 @@ const Skills = (props: ContainerProps) => {
 			</Row>
 			<Row className="gy-3 flex-md-row-reverse">
 				<Col md={6}>
-					<Stack gap={1}>
-						<div className="d-flex align-items-center" style={{
-							columnGap: "5px"
-						}}>
-							<Image src={SkillIcon} roundedCircle style={{
-								width: "6rem",
-								height: "6rem"
-							}}/>
-							<div>
-								<h5>React.js</h5>
-								<p>I use React to develop the web.</p>
-							</div>
-						</div>
-						<div className="d-flex align-items-center" style={{
-							columnGap: "5px"
-						}}>
-							<Image src={SkillIcon} roundedCircle style={{
-								width: "6rem",
-								height: "6rem"
-							}}/>
-							<div>
-								<h5>Webpack</h5>
-								<p>I use Webpack to bundle the code.</p>
-							</div>
-						</div>
-						<div className="d-flex align-items-center" style={{
-							columnGap: "5px"
-						}}>
-							<Image src={SkillIcon} roundedCircle style={{
-								width: "6rem",
-								height: "6rem"
-							}}/>
-							<div>
-								<h5>Pixi.js</h5>
-								<p>I use pixi to develop the HTML5 games.</p>
-							</div>
-						</div>
+					<Stack gap={3}>
+						{
+							webDevSkillData.map((data, index)=>(
+								<div key={index} className="d-flex align-items-center gap-3">
+									{data.icon}
+									<div>
+										<h5>{data.name}</h5>
+										<p>{data.description}</p>
+									</div>
+								</div>
+							))
+						}
 					</Stack>
 				</Col>
 				<Col md={6} className="my-md-auto">
@@ -111,4 +106,10 @@ const Skills = (props: ContainerProps) => {
 	);
 };
 
-export default Skills; 
+export default Skills;
+
+interface ISkillInfo {
+	name: string;
+	description: string;
+	icon: ReactElement;
+}
