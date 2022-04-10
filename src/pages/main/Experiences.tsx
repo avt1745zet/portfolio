@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import { Col, Container, ContainerProps, Row } from "react-bootstrap";
+import React, { ComponentProps, FC } from "react";
+import { Col, Row } from "react-bootstrap";
 
-const Experiences: FC<ContainerProps> = (props: ContainerProps) => {
+const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
 	const timelineItemData: Array<ITimelineItem> = new Array<ITimelineItem>(
 		{
@@ -21,12 +21,12 @@ const Experiences: FC<ContainerProps> = (props: ContainerProps) => {
 		}
 	);
 	return (
-		<Container {...other} className="text-light">
-			<Container as="header">
+		<section {...other} className="text-light">
+			<header>
 				<h2 className="text-center">
 					Experiences
 				</h2>
-			</Container>
+			</header>
 			<Row>
 				<Col xs={12} lg={6}>
 					<Timeline items={timelineItemData}/>
@@ -52,7 +52,7 @@ const Experiences: FC<ContainerProps> = (props: ContainerProps) => {
 					</p>
 				</Col>
 			</Row>
-		</Container>
+		</section>
 	);
 };
 

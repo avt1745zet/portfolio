@@ -1,5 +1,5 @@
-import React, { ReactElement } from "react";
-import { Col, Container, ContainerProps, Row, Stack } from "react-bootstrap";
+import React, { ComponentProps, FC, ReactElement } from "react";
+import { Col, Row, Stack } from "react-bootstrap";
 import TypescriptLogo from "./../../../res/skillIcons/typescript-logo.svg";
 import PixijsLogo from "./../../../res/skillIcons/pixijs-text.svg";
 import UnityLogo from "./../../../res/skillIcons/unity-logo.svg";
@@ -8,7 +8,7 @@ import WebpackLogo from "./../../../res/skillIcons/webpack-logo.svg";
 import HtmlLogo from "./../../../res/skillIcons/html5-logo.svg";
 import CssLogo from "./../../../res/skillIcons/css3-logo.svg";
 
-const Skills = (props: ContainerProps) => {
+const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
 	const gameDevSkillData: Array<ISkillInfo> = new Array<ISkillInfo>(
 		{
@@ -50,12 +50,12 @@ const Skills = (props: ContainerProps) => {
 		}
 	);
 	return(
-		<Container {...other} className="text-light">
-			<Container as="header">
+		<section {...other} className="text-light">
+			<header>
 				<h2 className="text-center" >
 					Skills
 				</h2>
-			</Container>
+			</header>
 			<Row className="gy-3">
 				<Col md={6}>
 					<Stack gap={3}>
@@ -102,7 +102,7 @@ const Skills = (props: ContainerProps) => {
 					</p>
 				</Col>
 			</Row>
-		</Container>
+		</section>
 	);
 };
 

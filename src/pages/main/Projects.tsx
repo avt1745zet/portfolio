@@ -1,7 +1,7 @@
-import React from "react";
-import { Card, Col, Container, ContainerProps, Row } from "react-bootstrap";
+import React, { ComponentProps, FC } from "react";
+import { Card, Col, Row } from "react-bootstrap";
 
-const Projects = (props: ContainerProps) => {
+const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
 	const projectInfoData: Array<IProjectInfo> = new Array<IProjectInfo>(
 		{
@@ -26,12 +26,12 @@ const Projects = (props: ContainerProps) => {
 		}
 	);
 	return (
-		<Container {...other} className="text-light">
-			<Container as="header">
+		<section {...other} className="text-light">
+			<header>
 				<h2 className="text-center" >
 					Projects
 				</h2>
-			</Container>
+			</header>
 			<Row className="g-3">
 				{
 					projectInfoData.map((data, index)=> (
@@ -47,7 +47,7 @@ const Projects = (props: ContainerProps) => {
 					))
 				}
 			</Row>
-		</Container>
+		</section>
 	);
 };
 

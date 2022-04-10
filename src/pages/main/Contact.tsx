@@ -1,18 +1,18 @@
-import React from "react";
-import { Col, Container, ContainerProps, Row } from "react-bootstrap";
+import React, { ComponentProps, FC } from "react";
+import { Col, Row } from "react-bootstrap";
 import EmailIcon from "bootstrap-icons/icons/envelope.svg";
 import LinkedinIcon from "bootstrap-icons/icons/linkedin.svg";
 import GithubinIcon from "bootstrap-icons/icons/github.svg";
 
-const Contact = (props: ContainerProps) => {
+const Contact: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
 	return (
-		<Container {...other} className="text-light">
-			<Container as="header">
+		<section {...other} className="text-light">
+			<header>
 				<h2 className="text-center" >
 					Contact
 				</h2>
-			</Container>
+			</header>
 			<Row className="justify-content-between">
 				<Col sm={12} lg={5}>
 					<p>
@@ -46,7 +46,7 @@ const Contact = (props: ContainerProps) => {
 					</address>
 				</Col>
 			</Row>
-		</Container>
+		</section>
 	);
 };
 

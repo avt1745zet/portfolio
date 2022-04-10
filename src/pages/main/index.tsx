@@ -89,11 +89,11 @@ const MainPage = () => {
 				</Container>
 			</Navbar>
 			<Container as="main">
-				<Overview as="section" id="overview"/>
-				<Skills as="section" id="skills"/>
-				<Experiences as="section" id="experiences"/>
-				<Projects as="section" id="projects"/>
-				<Contact as="section" id="contact"/>
+				<Overview id="overview"/>
+				<Skills id="skills"/>
+				<Experiences id="experiences"/>
+				<Projects id="projects"/>
+				<Contact id="contact"/>
 			</Container>
 		</Fragment>
 	);

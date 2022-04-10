@@ -1,11 +1,11 @@
-import React from "react";
-import { Col, Container, ContainerProps, Image, Row } from "react-bootstrap";
+import React, { ComponentProps, FC } from "react";
+import { Col, Image, Row } from "react-bootstrap";
 import AvatarImage from "./../../../res/avatar.png";
 
-const Overview = (props: ContainerProps) => {
+const Overview: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
 	return (
-		<Container {...other} className="text-light">
+		<section {...other} className="text-light">
 			<Row className="justify-content-sm-center justify-content-md-start" 
 				style={{
 					paddingTop: "70px" /** Height of navbar */
@@ -28,7 +28,7 @@ const Overview = (props: ContainerProps) => {
 					</p>
 				</Col>
 			</Row>
-		</Container>
+		</section>
 	);
 };
 
