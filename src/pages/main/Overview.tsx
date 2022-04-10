@@ -5,7 +5,7 @@ import AvatarImage from "./../../../res/avatar.png";
 const Overview: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
 	return (
-		<section {...other} className="text-light">
+		<section {...other} className="text-light mb-5">
 			<Row className="justify-content-sm-center justify-content-md-start" 
 				style={{
 					paddingTop: "70px" /** Height of navbar */

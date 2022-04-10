@@ -26,7 +26,7 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 		}
 	);
 	return (
-		<section {...other} className="text-light">
+		<section {...other} className="text-light my-5">
 			<header>
 				<h2 className="text-center" >
 					Projects

@@ -21,7 +21,7 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 		}
 	);
 	return (
-		<section {...other} className="text-light">
+		<section {...other} className="text-light my-5">
 			<header>
 				<h2 className="text-center">
 					Experiences

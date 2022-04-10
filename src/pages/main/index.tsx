@@ -82,7 +82,7 @@ const MainPage = () => {
 								Projects
 							</Nav.Link>
 							<Nav.Link href="#contact" active={currentSection==="contact"}>
-								Contacts
+								Contact
 							</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>

@@ -7,7 +7,7 @@ import GithubinIcon from "bootstrap-icons/icons/github.svg";
 const Contact: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
 	return (
-		<section {...other} className="text-light">
+		<section {...other} className="text-light mt-5">
 			<header>
 				<h2 className="text-center" >
 					Contact
