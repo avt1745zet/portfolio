@@ -30,7 +30,7 @@ const MainPage = () => {
 				{id: "contact", offsetTop: document.getElementById("contact")?.offsetTop || 0}
 			];
 			for( let i = 0; i < navTargetList.length; i++){
-				if(Math.abs(navTargetList[i].offsetTop - window.scrollY) <= navbarHeight){
+				if(Math.abs(navTargetList[i].offsetTop - window.scrollY) <= navbarHeight * 2){
 					setCurrentSection(navTargetList[i].id);
 					break;
 				}
