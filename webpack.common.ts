@@ -1,13 +1,14 @@
 import * as path from "path";
-import * as webpack from "webpack";
+import { Configuration } from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
-const config: webpack.Configuration = {
+const config: Configuration = {
 	entry: "./src/index.tsx",
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "bundle.js",
-		assetModuleFilename: "assets/[name]_[hash][ext][query]"
+		assetModuleFilename: "assets/[name]_[hash][ext][query]",
+		clean: true
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -40,9 +41,7 @@ const config: webpack.Configuration = {
 	},
 	resolve: {
 		extensions: [".tsx", ".ts", ".js"],
-	},
-	devtool: "eval-source-map",
-	mode: "development",
+	}
 };
 
 export default config;
