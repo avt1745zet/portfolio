@@ -5,27 +5,31 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 	const {...other} = props;
 	const projectInfoData: Array<IProjectInfo> = new Array<IProjectInfo>(
 		{
-			name: "Project name 1",
+			name: "Portfolio",
 			type: ProjectType.WEB,
-			description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga, Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga.",
+			descriptions: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga", "Amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga."],
+			links: [{
+				title: "Repo link",
+				url: "https://github.com/avt1745zet?tab=repositories"
+			}],
 			imageSrc: "http://placehold.jp/640x360.png"
 		},
 		{
 			name: "Project name 2",
 			type: ProjectType.GAME,
-			description: "Amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga.",
+			descriptions: ["Amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga."],
 			imageSrc: "http://placehold.jp/640x360.png"
 		},
 		{
 			name: "Project name 3",
 			type: ProjectType.TOOL,
-			description: "Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur.",
+			descriptions: ["Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur."],
 			imageSrc: "http://placehold.jp/640x360.png"
 		},
 		{
 			name: "Project name 4",
 			type: ProjectType.GAME,
-			description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga.",
+			descriptions: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga."],
 			imageSrc: "http://placehold.jp/640x360.png"
 		}
 	);
@@ -66,7 +70,12 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 								<Card.Body>
 									<Card.Title>{data.name}</Card.Title>
 									<Card.Subtitle className="mb-2 text-muted">{`Type: ${getTypeText(data.type)}`}</Card.Subtitle>
-									<Card.Text>{data.description}</Card.Text>
+									{
+										data.descriptions.map((description, index) => <Card.Text key={index}>{description}</Card.Text>)
+									}
+									{
+										data.links? data.links.map((link, index) => <Card.Link key={index} href={link.url} target="_blank">{link.title}</Card.Link>): []
+									}
 								</Card.Body>
 							</Card>
 						</Col>
@@ -82,7 +91,8 @@ export default Projects;
 interface IProjectInfo {
 	name: string;
 	type: ProjectType;
-	description: string;
+	descriptions: Array<string>;
+	links?: Array<ILinkData>;
 	imageSrc: string;
 }
 
@@ -90,4 +100,9 @@ enum ProjectType {
 	GAME,
 	WEB,
 	TOOL
+}
+
+interface ILinkData {
+	title: string;
+	url: string;
 }
