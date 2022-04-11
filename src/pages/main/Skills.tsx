@@ -52,9 +52,9 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 	return(
 		<section {...other} className="text-light my-5">
 			<header>
-				<h2 className="text-center" >
+				<h1 className="text-center text-uppercase" >
 					Skills
-				</h2>
+				</h1>
 			</header>
 			<Row className="gy-3">
 				<Col md={6}>

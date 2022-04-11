@@ -23,9 +23,9 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 	return (
 		<section {...other} className="text-light my-5">
 			<header>
-				<h2 className="text-center">
+				<h1 className="text-center text-uppercase">
 					Experiences
-				</h2>
+				</h1>
 			</header>
 			<Row>
 				<Col xs={12} lg={6}>

@@ -54,9 +54,9 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 	return (
 		<section {...other} className="text-light my-5">
 			<header>
-				<h2 className="text-center" >
+				<h1 className="text-center text-uppercase" >
 					Projects
-				</h2>
+				</h1>
 			</header>
 			<Row className="g-3">
 				<Col sm={12}>
