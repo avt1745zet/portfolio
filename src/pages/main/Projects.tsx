@@ -1,66 +1,50 @@
 import React, { ComponentProps, FC } from "react";
 import { Card, Col, Row } from "react-bootstrap";
+import { Trans, useTranslation } from "react-i18next";
 
 const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
+	const [t] = useTranslation();
 	const projectInfoData: Array<IProjectInfo> = new Array<IProjectInfo>(
 		{
-			name: "Portfolio",
+			nameKey: "projects.projectList.0.name",
 			type: ProjectType.WEB,
-			descriptions: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga", "Amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga."],
+			descriptionKey: "projects.projectList.0.description",
 			links: [{
-				title: "Repo link",
+				titleKey: "projects.projectList.0.links.0.title",
 				url: "https://github.com/avt1745zet?tab=repositories"
 			}],
 			imageSrc: "http://placehold.jp/640x360.png"
 		},
 		{
-			name: "Project name 2",
+			nameKey: "projects.projectList.1.name",
 			type: ProjectType.GAME,
-			descriptions: ["Amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga."],
+			descriptionKey: "projects.projectList.1.description",
 			imageSrc: "http://placehold.jp/640x360.png"
 		},
 		{
-			name: "Project name 3",
+			nameKey: "projects.projectList.2.name",
 			type: ProjectType.TOOL,
-			descriptions: ["Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur."],
+			descriptionKey: "projects.projectList.2.description",
 			imageSrc: "http://placehold.jp/640x360.png"
 		},
 		{
-			name: "Project name 4",
+			nameKey: "projects.projectList.3.name",
 			type: ProjectType.GAME,
-			descriptions: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga."],
+			descriptionKey: "projects.projectList.3.description",
 			imageSrc: "http://placehold.jp/640x360.png"
 		}
 	);
-	const getTypeText = (type: ProjectType) => {
-		let result: string;
-		switch (type) {
-		case ProjectType.GAME:
-			result = "Game";
-			break;
-		case ProjectType.WEB:
-			result = "Web";
-			break;
-		case ProjectType.TOOL:
-			result = "Tool";
-			break;
-		default:
-			result = "uncategorized";
-			break;
-		}
-		return result;
-	};
 	return (
 		<section {...other} className="text-light my-5">
 			<header>
 				<h1 className="text-center text-uppercase" >
-					Projects
+					{t("projects.title")}
 				</h1>
 			</header>
 			<Row className="g-3">
 				<Col sm={12}>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo rerum quae iusto eaque vero non eos placeat.</p>
+					<Trans i18nKey="projects.description" components={{p: <p/>}}/>
 				</Col>
 				{
 					projectInfoData.map((data, index)=> (
@@ -68,13 +52,11 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 							<Card bg="dark" text="light">
 								<Card.Img src={data.imageSrc}/>
 								<Card.Body>
-									<Card.Title>{data.name}</Card.Title>
-									<Card.Subtitle className="mb-2 text-muted">{`Type: ${getTypeText(data.type)}`}</Card.Subtitle>
+									<Card.Title>{t(data.nameKey)}</Card.Title>
+									<Card.Subtitle className="mb-2 text-muted">{t("projects.type")+t(`projects.projectType.${data.type}`)}</Card.Subtitle>
+									<Trans i18nKey={data.descriptionKey} components={{p: <Card.Text/>}}/>
 									{
-										data.descriptions.map((description, index) => <Card.Text key={index}>{description}</Card.Text>)
-									}
-									{
-										data.links? data.links.map((link, index) => <Card.Link key={index} href={link.url} target="_blank">{link.title}</Card.Link>): []
+										data.links? data.links.map((link, index) => <Card.Link key={index} href={link.url} target="_blank">{t(link.titleKey)}</Card.Link>): []
 									}
 								</Card.Body>
 							</Card>
@@ -89,9 +71,9 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 export default Projects;
 
 interface IProjectInfo {
-	name: string;
+	nameKey: string;
 	type: ProjectType;
-	descriptions: Array<string>;
+	descriptionKey: string;
 	links?: Array<ILinkData>;
 	imageSrc: string;
 }
@@ -103,6 +85,6 @@ enum ProjectType {
 }
 
 interface ILinkData {
-	title: string;
+	titleKey: string;
 	url: string;
 }

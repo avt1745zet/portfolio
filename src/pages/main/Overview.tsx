@@ -1,9 +1,11 @@
 import React, { ComponentProps, FC } from "react";
 import { Col, Image, Row } from "react-bootstrap";
+import { Trans, useTranslation } from "react-i18next";
 import AvatarImage from "./../../../res/avatar.png";
 
 const Overview: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
+	const [t] = useTranslation();
 	return (
 		<section {...other} className="text-light mb-5">
 			<Row className="justify-content-sm-center justify-content-md-start" 
@@ -18,13 +20,13 @@ const Overview: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 						marginTop: "-1rem"
 					}}>
 						<i>
-							Be a clean coder.
+							{t("overview.quickBio")}
 						</i>
 					</p>
 				</Col>
 				<Col md={8} lg={9} className="mt-auto">
 					<p>
-						<big className="fs-1">Hi, I am Shane</big>, ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate quos quasi suscipit odit quia omnis labore consequatur, rem dolorum praesentium mollitia velit minima dolores nulla fuga vel maiores deserunt.
+						<Trans i18nKey="overview.introduction" components={{big: <big className="fs-1"/>}}/>
 					</p>
 				</Col>
 			</Row>

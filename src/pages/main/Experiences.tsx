@@ -1,22 +1,24 @@
 import React, { ComponentProps, FC } from "react";
 import { Col, Row } from "react-bootstrap";
+import { Trans, useTranslation } from "react-i18next";
 
 const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
+	const [t] = useTranslation();
 	const timelineItemData: Array<ITimelineItem> = new Array<ITimelineItem>(
 		{
-			title: "A no job guy.",
-			description: "🥲",
+			titleKey: "experiences.timeline.events.0.title",
+			descriptionKey: "experiences.timeline.events.0.description",
 			timeIntervalNodes: [new Date(2022,2), "Current"]
 		},
 		{
-			title: "The Dojo Software Solutions Inc.",
-			description: "My first job, I learn so many things.",
+			titleKey: "experiences.timeline.events.1.title",
+			descriptionKey: "experiences.timeline.events.1.description",
 			timeIntervalNodes: [new Date(2019,8), new Date(2022,2)]
 		},
 		{
-			title: "National Formosa University",
-			description: "My education, I learn so many things.",
+			titleKey: "experiences.timeline.events.2.title",
+			descriptionKey: "experiences.timeline.events.2.description",
 			timeIntervalNodes: [new Date(2014,9), new Date(2018,6)]
 		}
 	);
@@ -24,7 +26,7 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 		<section {...other} className="text-light my-5">
 			<header>
 				<h1 className="text-center text-uppercase">
-					Experiences
+					{t("experiences.title")}
 				</h1>
 			</header>
 			<Row>
@@ -32,15 +34,7 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 					<Timeline items={timelineItemData}/>
 				</Col>
 				<Col xs={12} lg={6} className="align-self-center">
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolorum odio voluptate, sapiente consequuntur vitae!
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, iste?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia minus, dolor nobis dolorum aspernatur atque! Recusandae vero nostrum eveniet itaque quasi at praesentium doloribus sapiente?
-					</p>
+					<Trans i18nKey="experiences.description" components={{p: <p/>}}/>
 				</Col>
 			</Row>
 		</section>
@@ -51,6 +45,7 @@ export default Experiences;
 
 const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 	const {items} = props;
+	const [t] = useTranslation();
 	return (
 		<div style={{
 			position: "relative"
@@ -132,7 +127,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 									</i>
 									{/** Title */}
 									<h5 style={{color: "black", marginBottom: 0}}>
-										{item.title}
+										{t(item.titleKey)}
 									</h5>
 									{/** Triangle in corner  */}
 									<div 
@@ -154,7 +149,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 								</div>
 								{/** Description */}
 								<p>
-									{item.description}
+									{t(item.descriptionKey)}
 								</p>
 							</div>
 							{/** Circle on vertical line */}
@@ -189,7 +184,7 @@ interface ITimelineProps {
 }
 
 interface ITimelineItem {
-	title: string;
-	description: string;
+	titleKey: string;
+	descriptionKey: string;
 	timeIntervalNodes: Array<Date|string>;
 }

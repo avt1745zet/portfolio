@@ -1,0 +1,124 @@
+{
+    "navbar": {
+        "skills": "Skills",
+        "experiences": "Experiences",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "overview": {
+        "quickBio": "Be a clean coder.",
+        "introduction": "<big>Hi, I am Shane</big>, ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate quos quasi suscipit odit quia omnis labore consequatur, rem dolorum praesentium mollitia velit minima dolores nulla fuga vel maiores deserunt."
+    },
+    "skills": {
+        "title": "Skills",
+        "gameDevSkills": {
+            "typescript": {
+                "name": "Typecript",
+                "description": "I use Typecript to develop the HTML5 games."
+            },
+            "pixijs": {
+                "name": "Pixi.js",
+                "description": "I use Pixi.js to develop the HTML5 games."
+            },
+            "unity": {
+                "name": "Unity",
+                "description": "I use Unity to develop some 3D game."
+            },
+            "title": "Game Develop",
+            "description": "<p>Lorem ipsum dolor sit amet consectetur.</p><p>adipisicing elit. Odio totam in enim labore dicta velit facere molestias officiis, omnis quaerat delectus quod repellendus doloremque sapiente, beatae aperiam dolore maiores sint rem nesciunt id quasi ipsam atque. Animi, nihil explicabo velit.</p>"
+        },
+        "webDevSkills": {
+            "reactjs": {
+                "name": "React.js",
+                "description": "I use React to develop the web."
+            },
+            "webpack": {
+                "name": "Webpack",
+                "description": "I use Webpack to bundle the code."
+            },
+            "html": {
+                "title": "HTML",
+                "content": "I use css to decorate website."
+            },
+            "css": {
+                "name": "CSS",
+                "description": "I use html to built website."
+            },
+            "title": "Web Develop",
+            "description": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio totam in enim labore dicta velit facere molestias officiis, omnis quaerat delectus quod repellendus doloremque sapiente, beatae aperiam dolore maiores sint rem nesciunt id quasi ipsam atque. Animi, nihil explicabo velit inventore facilis quis ullam tenetur molestiae molestias nulla nemo libero similique. Quaerat adipisci in saepe accusamus hic aliquid quisquam quam.</p>"
+        }
+    },
+    "experiences": {
+        "title": "Experiences",
+        "timeline": {
+            "events": [
+                {
+                    "title": "A no job guy.",
+                    "description": "🥲"
+                },
+                {
+                    "title": "The Dojo Software Solutions Inc.",
+                    "description": "My first job, I learn so many things."
+                },
+                {
+                    "title": "National Formosa University.",
+                    "description": "My heightest education, I learn so many things."
+                }
+            ]
+        },
+        "description": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolorum odio voluptate, sapiente consequuntur vitae!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, iste?</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia minus, dolor nobis dolorum aspernatur atque! Recusandae vero nostrum eveniet itaque quasi at praesentium doloribus sapiente?</p>"
+    },
+    "projects": {
+        "title": "Projects",
+        "type": "Type: ",
+        "projectType": [
+            "Web",
+            "Game",
+            "Tool"
+        ],
+        "projectList": [
+            {
+                "name": "This website",
+                "description": "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo rerum quae iusto eaque vero non eos placeat.</p>",
+                "links": [
+                    {
+                        "title": "Repo link"
+                    }
+                ]
+            },
+            {
+                "name": "Project 2",
+                "description": "<p>Amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga.</p>",
+                "links": []
+            },
+            {
+                "name": "Project 3",
+                "description": "<p>Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur.</p>",
+                "links": []
+            },
+            {
+                "name": "Project 4",
+                "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga.</p>",
+                "links": []
+            }
+        ],
+        "description": "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo rerum quae iusto eaque vero non eos placeat.</p>"
+    },
+    "contact": {
+        "title": "Contact",
+        "methods": [
+            {
+                "name": "Email:",
+                "description": "<p>If you want to email me, please do it.</p>"
+            },
+            {
+                "name": "LinkedIn:",
+                "description": "<p>與Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus alias eaque eveniet culpa nobis nemo quibusdam dicta exercitationem sunt quas.</p>"
+            },
+            {
+                "name": "Github:",
+                "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga earum consectetur ratione distinctio.</p>"
+            }
+        ]
+    }
+}

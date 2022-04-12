@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import Overview from "./Overview";
 import Skills from "./Skills";
 import Experiences from "./Experiences";
@@ -41,6 +42,7 @@ const MainPage = () => {
 			removeEventListener("scroll", scrollEventListener);
 		};
 	}, []);
+	const [t] = useTranslation();
 	return (
 		<Fragment>
 			{/** Navbar */}
@@ -73,16 +75,16 @@ const MainPage = () => {
 					<Navbar.Collapse className="justify-content-end">
 						<Nav>
 							<Nav.Link href="#skills" active={currentSection==="skills"}>
-								Skills
+								{t("navbar.skills")}
 							</Nav.Link>
 							<Nav.Link href="#experiences" active={currentSection==="experiences"}>
-								Experiences
+								{t("navbar.experiences")}
 							</Nav.Link>
 							<Nav.Link href="#projects" active={currentSection==="projects"}>
-								Projects
+								{t("navbar.projects")}
 							</Nav.Link>
 							<Nav.Link href="#contact" active={currentSection==="contact"}>
-								Contact
+								{t("navbar.contact")}
 							</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>

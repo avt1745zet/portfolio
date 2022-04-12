@@ -1,6 +1,7 @@
 
 import React, { Fragment } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./i18n/config";
 import MainPage from "./pages/main";
 
 const App = () => {
