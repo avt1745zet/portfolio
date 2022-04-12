@@ -84,8 +84,10 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 								style={{
 									padding: "0.5rem",
 									...isEvenNumber(index)? {
+										textAlign: "start",
 										marginLeft: "1rem"
 									}: {
+										textAlign: "end",
 										marginRight: "1rem"
 									}
 								}}
@@ -126,7 +128,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 										}
 									</i>
 									{/** Title */}
-									<h5 style={{color: "black", marginBottom: 0}}>
+									<h5 style={{color: "black", marginBottom: 0, textAlign: "start"}}>
 										{t(item.titleKey)}
 									</h5>
 									{/** Triangle in corner  */}
@@ -148,7 +150,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 									/>
 								</div>
 								{/** Description */}
-								<p>
+								<p style={{textAlign: "start"}}>
 									{t(item.descriptionKey)}
 								</p>
 							</div>
