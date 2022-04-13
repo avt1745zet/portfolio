@@ -3,7 +3,12 @@
         "skills": "技能",
         "experiences": "經驗",
         "projects": "專案",
-        "contact": "聯絡方式"
+        "contact": "聯絡方式",
+        "language": "語言",
+        "languages": {
+            "zh-Hant": "繁體中文",
+            "en": "英文"
+        }
     },
     "overview": {
         "quickBio": "我是一隻烏龜",

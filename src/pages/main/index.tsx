@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Overview from "./Overview";
 import Skills from "./Skills";
@@ -18,6 +18,11 @@ const MainPage = () => {
 	};
 	const handleNavbarToggleClick = () => {
 		setNavbarExpanded(!navbarExpanded);
+	};
+	const handleNavbarDropdownSelect = (e: string | null) => {
+		if(e !== null){
+			i18n.changeLanguage(e);
+		}
 	};
 	const navbarHeight = 70;
 	useEffect(() => {
@@ -42,7 +47,7 @@ const MainPage = () => {
 			removeEventListener("scroll", scrollEventListener);
 		};
 	}, []);
-	const [t] = useTranslation();
+	const [t, i18n] = useTranslation();
 	return (
 		<Fragment>
 			{/** Navbar */}
@@ -86,6 +91,14 @@ const MainPage = () => {
 							<Nav.Link href="#contact" active={currentSection==="contact"}>
 								{t("navbar.contact")}
 							</Nav.Link>
+							<NavDropdown title={t("navbar.language")} menuVariant="dark" onSelect={handleNavbarDropdownSelect}>
+								<NavDropdown.Item eventKey={"zh-Hant"}>
+									{t("navbar.languages.zh-Hant")}
+								</NavDropdown.Item>
+								<NavDropdown.Item eventKey={"en"}>
+									{t("navbar.languages.en")}
+								</NavDropdown.Item>
+							</NavDropdown>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

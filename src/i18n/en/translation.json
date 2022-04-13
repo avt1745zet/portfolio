@@ -3,7 +3,12 @@
         "skills": "Skills",
         "experiences": "Experiences",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "language": "Language",
+        "languages": {
+            "zh-Hant": "Traditional Chinese",
+            "en": "English"
+        }
     },
     "overview": {
         "quickBio": "Be a clean coder.",
