@@ -42,12 +42,12 @@
                 "description": "I use Webpack to bundle the code."
             },
             "html": {
-                "title": "HTML",
-                "content": "I use css to decorate website."
+                "name": "HTML",
+                "description": "I use html to built website."
             },
             "css": {
                 "name": "CSS",
-                "description": "I use html to built website."
+                "description": "I use css to decorate website."
             },
             "title": "Web Develop",
             "description": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio totam in enim labore dicta velit facere molestias officiis, omnis quaerat delectus quod repellendus doloremque sapiente, beatae aperiam dolore maiores sint rem nesciunt id quasi ipsam atque. Animi, nihil explicabo velit inventore facilis quis ullam tenetur molestiae molestias nulla nemo libero similique. Quaerat adipisci in saepe accusamus hic aliquid quisquam quam.</p>"
