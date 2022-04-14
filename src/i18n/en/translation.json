@@ -12,7 +12,7 @@
     },
     "overview": {
         "quickBio": "Be a clean coder.",
-        "introduction": "<big>Hi, I am Shane</big>, ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate quos quasi suscipit odit quia omnis labore consequatur, rem dolorum praesentium mollitia velit minima dolores nulla fuga vel maiores deserunt."
+        "introduction": "<p><big>Hi, I am Shane</big>, ipsum dolor sit amet consectetur adipisicing elit.</p><p>Incidunt cupiditate quos quasi suscipit odit quia omnis labore consequatur, rem dolorum praesentium mollitia velit minima dolores nulla fuga vel maiores deserunt.</p>"
     },
     "skills": {
         "title": "Skills",

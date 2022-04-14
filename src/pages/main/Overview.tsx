@@ -25,9 +25,7 @@ const Overview: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 					</p>
 				</Col>
 				<Col md={8} lg={9} className="mt-auto">
-					<p>
-						<Trans i18nKey="overview.introduction" components={{big: <big className="fs-1"/>}}/>
-					</p>
+					<Trans i18nKey="overview.introduction" components={{p: <p/>, big: <big className="fs-1"/>}}/>
 				</Col>
 			</Row>
 		</section>
