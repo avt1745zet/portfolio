@@ -1,2 +1,2 @@
-# 羊羽的小窩
-This is a personal website project.
+# Portfolio
+Just a personal portfolio project, using react, react-bootstrap and webpack.

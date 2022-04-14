@@ -1,13 +1,13 @@
 import React, { ComponentProps, FC, ReactElement } from "react";
 import { Col, Row, Stack } from "react-bootstrap";
 import { Trans, useTranslation } from "react-i18next";
-import TypescriptLogo from "./../../../res/skillIcons/typescript-logo.svg";
-import PixijsLogo from "./../../../res/skillIcons/pixijs-text.svg";
-import UnityLogo from "./../../../res/skillIcons/unity-logo.svg";
-import ReactLogo from "./../../../res/skillIcons/react-logo.svg";
-import WebpackLogo from "./../../../res/skillIcons/webpack-logo.svg";
-import HtmlLogo from "./../../../res/skillIcons/html5-logo.svg";
-import CssLogo from "./../../../res/skillIcons/css3-logo.svg";
+import TypescriptLogo from "./../../assets/images/skillIcons/typescript-logo.svg";
+import PixijsLogo from "./../../assets/images/skillIcons/pixijs-text.svg";
+import UnityLogo from "./../../assets/images/skillIcons/unity-logo.svg";
+import ReactLogo from "./../../assets/images/skillIcons/react-logo.svg";
+import WebpackLogo from "./../../assets/images/skillIcons/webpack-logo.svg";
+import HtmlLogo from "./../../assets/images/skillIcons/html5-logo.svg";
+import CssLogo from "./../../assets/images/skillIcons/css3-logo.svg";
 
 const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;

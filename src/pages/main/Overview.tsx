@@ -1,7 +1,7 @@
 import React, { ComponentProps, FC } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { Trans, useTranslation } from "react-i18next";
-import AvatarImage from "./../../../res/avatar.png";
+import AvatarImage from "./../../assets/images/avatar.png";
 
 const Overview: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;

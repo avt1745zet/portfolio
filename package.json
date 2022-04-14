@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
-  "version": "1.0.5",
-  "description": "This is a personal website project.",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Just a personal portfolio project, using react, react-bootstrap and webpack.",
+  "main": "src/index.tsx",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.ts",
     "release": "webpack --config webpack.prod.ts",
@@ -12,8 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/avt1745zet/portfolio.git"
   },
-  "author": "YY",
-  "license": "MIT",
+  "author": "YY <avt1745zeo@gmail.com> (https://github.com/avt1745zet)",
+  "license": "",
   "bugs": {
     "url": "https://github.com/avt1745zet/portfolio/issues"
   },
