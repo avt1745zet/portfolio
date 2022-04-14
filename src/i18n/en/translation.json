@@ -51,6 +51,22 @@
             },
             "title": "Web Develop",
             "description": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio totam in enim labore dicta velit facere molestias officiis, omnis quaerat delectus quod repellendus doloremque sapiente, beatae aperiam dolore maiores sint rem nesciunt id quasi ipsam atque. Animi, nihil explicabo velit inventore facilis quis ullam tenetur molestiae molestias nulla nemo libero similique. Quaerat adipisci in saepe accusamus hic aliquid quisquam quam.</p>"
+        },
+        "generalSkills": {
+            "heart": {
+                "name": "Heart",
+                "description": "Lorem ipsum dolor sit amet consectetur."
+            },
+            "people": {
+                "name": "Relationship",
+                "description": "Lorem ipsum dolor sit amet consectetur."
+            },
+            "learning": {
+                "name": "Keep Learning",
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+            },
+            "title": "General Skill",
+            "description": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quaerat delectus quod repellendus doloremque sapiente, beatae aperiam dolore maiores sint rem nesciunt id quasi ipsam atque. Animi, nihil explicabo velit inventore facilis quis ullam tenetur molestiae molestias nulla nemo libero similique. Quaerat adipisci in saepe accusamus hic aliquid quisquam quam.</p>"
         }
     },
     "experiences": {

@@ -35,21 +35,37 @@
         "webDevSkills": {
             "reactjs": {
                 "name": "React.js",
-                "description": "我使用 React 產出網頁"
+                "description": "我使用 React 產出網頁。"
             },
             "webpack": {
                 "name": "Webpack",
-                "description": "我使用 Webpack 打包程式碼"
+                "description": "我使用 Webpack 打包程式碼。"
             },
             "html": {
                 "name": "HTML",
-                "description": "我使用 HTML 架構我的網站"
+                "description": "我使用 HTML 架構我的網站。"
             },
             "css": {
                 "name": "CSS",
-                "description": "我使用 CSS 美化我的網站"
+                "description": "我使用 CSS 美化我的網站。"
             },
             "title": "網頁開發",
+            "description": "<p>夫他在家點力的生院毒國未行始空香入往得的生</p><p>全我的樹省觀母園輕物年上動報、說要過重說價變，庭上星顧飛？高自的望大他部場準，麼要有會，創之奇隨是早業又此直備醫世。去手時，怕意業學最人說得腳人天？權密為分重好出企見不復度離夫進慢設……</p>"
+        },
+        "generalSkills": {
+            "heart": {
+                "name": "炙熱的心",
+                "description": "對於寫程式的熱愛。"
+            },
+            "people": {
+                "name": "同事愛",
+                "description": "處理同事間的矛盾。"
+            },
+            "learning": {
+                "name": "學習力",
+                "description": "程式語言日新月異，不斷的學習才能精進自己。"
+            },
+            "title": "普通技能",
             "description": "<p>夫他在家點力的生院毒國未行始空香入往得的生</p><p>全我的樹省觀母園輕物年上動報、說要過重說價變，庭上星顧飛？高自的望大他部場準，麼要有會，創之奇隨是早業又此直備醫世。去手時，怕意業學最人說得腳人天？權密為分重好出企見不復度離夫進慢設……</p>"
         }
     },
