@@ -13,7 +13,8 @@ const config: Configuration = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: "./src/index.html",
-			title: "Portfolio"
+			title: "Portfolio",
+			favicon: "./public/favicon.svg"
 		})
 	],
 	module: {
