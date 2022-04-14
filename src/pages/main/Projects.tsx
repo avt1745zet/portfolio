@@ -1,6 +1,11 @@
 import React, { ComponentProps, FC } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import { Trans, useTranslation } from "react-i18next";
+import ProtfolioCover from "./../../assets/images/projectCovers/project-cover-portfolio.png";
+import FindDifferentColorsCover from "./../../assets/images/projectCovers/project-cover-find-different-colors.png";
+import ColorGeneratorCover from "./../../assets/images/projectCovers/project-cover-color-generator.png";
+import ReelToolsCover from "./../../assets/images/projectCovers/project-cover-reel-tools.png";
+import UniversityGamePortfolioCover from "./../../assets/images/projectCovers/project-cover-university-game-portfolio.png";
 
 const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
@@ -14,25 +19,31 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 				titleKey: "projects.projectList.0.links.0.title",
 				url: "https://github.com/avt1745zet?tab=repositories"
 			}],
-			imageSrc: "http://placehold.jp/640x360.png"
+			imageSrc: ProtfolioCover
 		},
 		{
 			nameKey: "projects.projectList.1.name",
 			type: ProjectType.GAME,
 			descriptionKey: "projects.projectList.1.description",
-			imageSrc: "http://placehold.jp/640x360.png"
+			imageSrc: FindDifferentColorsCover
 		},
 		{
 			nameKey: "projects.projectList.2.name",
 			type: ProjectType.TOOL,
 			descriptionKey: "projects.projectList.2.description",
-			imageSrc: "http://placehold.jp/640x360.png"
+			imageSrc: ColorGeneratorCover
 		},
 		{
 			nameKey: "projects.projectList.3.name",
-			type: ProjectType.GAME,
+			type: ProjectType.TOOL,
 			descriptionKey: "projects.projectList.3.description",
-			imageSrc: "http://placehold.jp/640x360.png"
+			imageSrc: ReelToolsCover
+		},
+		{
+			nameKey: "projects.projectList.4.name",
+			type: ProjectType.WEB,
+			descriptionKey: "projects.projectList.4.description",
+			imageSrc: UniversityGamePortfolioCover
 		}
 	);
 	return (
