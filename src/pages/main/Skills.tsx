@@ -23,19 +23,19 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 				{
 					nameKey:"skills.gameDevSkills.typescript.name",
 					descriptionKey: "skills.gameDevSkills.typescript.description",
-					icon: <TypescriptLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <TypescriptLogo width="5rem" height="5rem"/>,
 					proficiency: 90
 				},
 				{
 					nameKey: "skills.gameDevSkills.pixijs.name",
 					descriptionKey: "skills.gameDevSkills.pixijs.description",
-					icon: <PixijsLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <PixijsLogo width="5rem" height="5rem"/>,
 					proficiency: 80
 				},
 				{
 					nameKey: "skills.gameDevSkills.unity.name",
 					descriptionKey: "skills.gameDevSkills.unity.description",
-					icon: <UnityLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <UnityLogo width="5rem" height="5rem"/>,
 					proficiency: 70
 				}
 			]
@@ -47,25 +47,25 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 				{
 					nameKey: "skills.webDevSkills.reactjs.name",
 					descriptionKey: "skills.webDevSkills.reactjs.description",
-					icon: <ReactLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <ReactLogo width="5rem" height="5rem"/>,
 					proficiency: 80
 				},
 				{
 					nameKey: "skills.webDevSkills.webpack.name",
 					descriptionKey: "skills.webDevSkills.webpack.description",
-					icon: <WebpackLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <WebpackLogo width="5rem" height="5rem"/>,
 					proficiency: 70
 				},
 				{
 					nameKey: "skills.webDevSkills.html.name",
 					descriptionKey: "skills.webDevSkills.html.description",
-					icon: <HtmlLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <HtmlLogo width="5rem" height="5rem"/>,
 					proficiency: 90
 				},
 				{
 					nameKey: "skills.webDevSkills.css.name",
 					descriptionKey: "skills.webDevSkills.css.description",
-					icon: <CssLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <CssLogo width="5rem" height="5rem"/>,
 					proficiency: 75
 				}
 			]
@@ -77,19 +77,19 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 				{
 					nameKey: "skills.generalSkills.heart.name",
 					descriptionKey: "skills.generalSkills.heart.description",
-					icon: <HeartIcon className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <HeartIcon width="5rem" height="5rem"/>,
 					proficiency: 100
 				},
 				{
 					nameKey: "skills.generalSkills.people.name",
 					descriptionKey: "skills.generalSkills.people.description",
-					icon: <PeopleIcon className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <PeopleIcon width="5rem" height="5rem"/>,
 					proficiency: 100
 				},
 				{
 					nameKey: "skills.generalSkills.learning.name",
 					descriptionKey: "skills.generalSkills.learning.description",
-					icon: <BookIcon className="flex-shrink-0" width="5rem" height="5rem"/>,
+					icon: <BookIcon width="5rem" height="5rem"/>,
 					proficiency: 100
 				}
 			]
