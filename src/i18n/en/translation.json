@@ -110,22 +110,47 @@
             {
                 "name": "Project 2",
                 "description": "<p>Amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga.</p>",
-                "links": []
+                "links": [
+                    {
+                        "title": "Web link"
+                    },
+                    {
+                        "title": "Repo link"
+                    }
+                ]
             },
             {
                 "name": "Project 3",
                 "description": "<p>Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur.</p>",
-                "links": []
+                "links": [
+                    {
+                        "title": "Web link"
+                    },
+                    {
+                        "title": "Repo link"
+                    }
+                ]
             },
             {
                 "name": "Project 4",
                 "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia rem ipsum officiis at culpa iusto vero fuga.</p>",
-                "links": []
+                "links": [
+                    {
+                        "title": "Web link"
+                    },
+                    {
+                        "title": "Repo link"
+                    }
+                ]
             },
             {
                 "name": "Project 5",
                 "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse placeat officia.</p>",
-                "links": []
+                "links": [
+                    {
+                        "title": "Web link"
+                    }
+                ]
             }
         ],
         "description": "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo rerum quae iusto eaque vero non eos placeat.</p>"

@@ -25,7 +25,7 @@ const Contact: FC<ComponentProps<"section">> = (props: ComponentProps<"section">
 						{t("contact.methods.0.name")}
 					</strong>
 					<br/>
-					<a href="mailto:avt1745zeo@gmail.com" className="text-break" target="_blank" rel="noreferrer">avt1745zeo@gmail.com</a>
+					<a href="mailto:avt1745zeo@gmail.com" className="text-break text-info" target="_blank" rel="noreferrer">avt1745zeo@gmail.com</a>
 					<br/>
 					<Trans i18nKey="contact.methods.0.description" components={{p: <p/>}}/>
 				</Col>
@@ -36,7 +36,7 @@ const Contact: FC<ComponentProps<"section">> = (props: ComponentProps<"section">
 						{t("contact.methods.1.name")}
 					</strong>
 					<br/>
-					<a href="https://www.linkedin.com/in/shane-wang-8195631b5/" className="text-break" target="_blank" rel="noreferrer">
+					<a href="https://www.linkedin.com/in/shane-wang-8195631b5/" className="text-break text-info" target="_blank" rel="noreferrer">
 							https://www.linkedin.com/in/shane-wang-8195631b5/
 					</a>
 					<br/>
@@ -49,7 +49,7 @@ const Contact: FC<ComponentProps<"section">> = (props: ComponentProps<"section">
 						{t("contact.methods.2.name")}
 					</strong>
 					<br/>
-					<a href="https://github.com/avt1745zet" className="text-break" target="_blank" rel="noreferrer">https://github.com/avt1745zet</a>
+					<a href="https://github.com/avt1745zet" className="text-break text-info" target="_blank" rel="noreferrer">https://github.com/avt1745zet</a>
 					<br/>
 					<Trans i18nKey="contact.methods.2.description" components={{p: <p/>}}/>
 				</Col>

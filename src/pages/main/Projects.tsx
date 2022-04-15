@@ -25,24 +25,49 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 			nameKey: "projects.projectList.1.name",
 			type: ProjectType.GAME,
 			descriptionKey: "projects.projectList.1.description",
+			links: [{
+				titleKey: "projects.projectList.1.links.0.title",
+				url: "https://avt1745zet.github.io/find-different-colors/"
+			},{
+				titleKey: "projects.projectList.1.links.1.title",
+				url: "https://github.com/avt1745zet/find-different-colors"
+			}],
 			imageSrc: FindDifferentColorsCover
 		},
 		{
 			nameKey: "projects.projectList.2.name",
 			type: ProjectType.TOOL,
 			descriptionKey: "projects.projectList.2.description",
+			links: [{
+				titleKey: "projects.projectList.2.links.0.title",
+				url: "https://avt1745zet.github.io/color-generator-online/"
+			},{
+				titleKey: "projects.projectList.2.links.1.title",
+				url: "https://github.com/avt1745zet/color-generator-online"
+			}],
 			imageSrc: ColorGeneratorCover
 		},
 		{
 			nameKey: "projects.projectList.3.name",
 			type: ProjectType.TOOL,
 			descriptionKey: "projects.projectList.3.description",
+			links: [{
+				titleKey: "projects.projectList.3.links.0.title",
+				url: "https://avt1745zet.github.io/reel-tools/"
+			},{
+				titleKey: "projects.projectList.3.links.1.title",
+				url: "https://github.com/avt1745zet/reel-tools"
+			}],
 			imageSrc: ReelToolsCover
 		},
 		{
 			nameKey: "projects.projectList.4.name",
 			type: ProjectType.WEB,
 			descriptionKey: "projects.projectList.4.description",
+			links: [{
+				titleKey: "projects.projectList.4.links.0.title",
+				url: "https://avt1745zet.github.io/university-game-portfolio/"
+			}],
 			imageSrc: UniversityGamePortfolioCover
 		}
 	);
@@ -67,7 +92,7 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 									<Card.Subtitle className="mb-2 text-muted">{t("projects.type")+t(`projects.projectType.${data.type}`)}</Card.Subtitle>
 									<Trans i18nKey={data.descriptionKey} components={{p: <Card.Text/>}}/>
 									{
-										data.links? data.links.map((link, index) => <Card.Link key={index} href={link.url} target="_blank">{t(link.titleKey)}</Card.Link>): []
+										data.links? data.links.map((link, index) => <Card.Link key={index} href={link.url} target="_blank" className="text-info">{t(link.titleKey)}</Card.Link>): []
 									}
 								</Card.Body>
 							</Card>
