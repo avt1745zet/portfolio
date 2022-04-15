@@ -1,5 +1,5 @@
 import React, { ComponentProps, FC, Fragment, ReactElement } from "react";
-import { Col, Row, Stack } from "react-bootstrap";
+import { Col, ProgressBar, Row, Stack } from "react-bootstrap";
 import { Trans, useTranslation } from "react-i18next";
 import TypescriptLogo from "./../../assets/images/skillIcons/typescript-logo.svg";
 import PixijsLogo from "./../../assets/images/skillIcons/pixijs-text.svg";
@@ -23,17 +23,20 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 				{
 					nameKey:"skills.gameDevSkills.typescript.name",
 					descriptionKey: "skills.gameDevSkills.typescript.description",
-					icon: <TypescriptLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <TypescriptLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 90
 				},
 				{
 					nameKey: "skills.gameDevSkills.pixijs.name",
 					descriptionKey: "skills.gameDevSkills.pixijs.description",
-					icon: <PixijsLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <PixijsLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 80
 				},
 				{
 					nameKey: "skills.gameDevSkills.unity.name",
 					descriptionKey: "skills.gameDevSkills.unity.description",
-					icon: <UnityLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <UnityLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 70
 				}
 			]
 		},
@@ -44,22 +47,26 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 				{
 					nameKey: "skills.webDevSkills.reactjs.name",
 					descriptionKey: "skills.webDevSkills.reactjs.description",
-					icon: <ReactLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <ReactLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 80
 				},
 				{
 					nameKey: "skills.webDevSkills.webpack.name",
 					descriptionKey: "skills.webDevSkills.webpack.description",
-					icon: <WebpackLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <WebpackLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 70
 				},
 				{
 					nameKey: "skills.webDevSkills.html.name",
 					descriptionKey: "skills.webDevSkills.html.description",
-					icon: <HtmlLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <HtmlLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 90
 				},
 				{
 					nameKey: "skills.webDevSkills.css.name",
 					descriptionKey: "skills.webDevSkills.css.description",
-					icon: <CssLogo className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <CssLogo className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 75
 				}
 			]
 		},
@@ -70,17 +77,20 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 				{
 					nameKey: "skills.generalSkills.heart.name",
 					descriptionKey: "skills.generalSkills.heart.description",
-					icon: <HeartIcon className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <HeartIcon className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 100
 				},
 				{
 					nameKey: "skills.generalSkills.people.name",
 					descriptionKey: "skills.generalSkills.people.description",
-					icon: <PeopleIcon className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <PeopleIcon className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 100
 				},
 				{
 					nameKey: "skills.generalSkills.learning.name",
 					descriptionKey: "skills.generalSkills.learning.description",
-					icon: <BookIcon className="flex-shrink-0" width="5rem" height="5rem"/>
+					icon: <BookIcon className="flex-shrink-0" width="5rem" height="5rem"/>,
+					proficiency: 100
 				}
 			]
 		}
@@ -114,11 +124,25 @@ const SkillGroup: FC<ISkillGroupProps> = (props: ISkillGroupProps) => {
 							<Stack gap={3}>
 								{
 									groupData.subSkills.map((data, index)=>(
-										<div key={index} className="d-flex align-items-center gap-3">
+										<div key={index}>
 											{data.icon}
-											<div>
+											<div className="d-inline-block align-middle" style={{
+												width: "calc(100% - 6rem)",
+												marginLeft: "1rem"
+											}}>
 												<h5>{t(data.nameKey)}</h5>
 												<p>{t(data.descriptionKey)}</p>
+												<ProgressBar 
+													label={data.proficiency} 
+													visuallyHidden 
+													striped 
+													variant="info" 
+													now={data.proficiency} 
+													className="bg-dark"
+													style={{
+														height: "4px"
+													}}
+												/>
 											</div>
 										</div>
 									))
@@ -150,4 +174,5 @@ interface ISkillData {
 	nameKey: string;
 	descriptionKey: string;
 	icon: ReactElement;
+	proficiency: number;
 }
