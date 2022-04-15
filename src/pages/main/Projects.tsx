@@ -75,7 +75,7 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 		<section {...other} className="text-light my-5">
 			<header>
 				<h1 className="text-center text-uppercase" >
-					{t("projects.title")}
+					<Trans i18nKey="projects.title" components={{nowarptext: <span className="text-nowrap" />}}/>
 				</h1>
 			</header>
 			<Row className="g-3">
@@ -90,7 +90,7 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 								<Card.Body>
 									<Card.Title>{t(data.nameKey)}</Card.Title>
 									<Card.Subtitle className="mb-2 text-muted">{t("projects.type")+t(`projects.projectType.${data.type}`)}</Card.Subtitle>
-									<Trans i18nKey={data.descriptionKey} components={{p: <Card.Text/>}}/>
+									<Trans i18nKey={data.descriptionKey} components={{p: <Card.Text/>, nowarptext: <span className="text-nowrap" />}}/>
 									{
 										data.links? data.links.map((link, index) => <Card.Link key={index} href={link.url} target="_blank" className="text-info">{t(link.titleKey)}</Card.Link>): []
 									}
