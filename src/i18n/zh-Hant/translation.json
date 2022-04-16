@@ -19,15 +19,15 @@
         "gameDevSkills": {
             "typescript": {
                 "name": "TypeScript",
-                "description": "JavaScript 的嚴格超級，尤為鍾愛有型別概念的程式語言"
+                "description": "JavaScript 的嚴格超集，我尤為喜歡有型別檢查的部分。"
             },
             "pixijs": {
                 "name": "Pixi.js",
-                "description": "我使用 Pixi.js 產出使用 WebGL 的遊戲。"
+                "description": "輕量、快速的 HTML5 渲染引擎，不需要 WebGL 知識的部分很吸引我😏"
             },
             "unity": {
                 "name": "Unity",
-                "description": "我使用 Unity 開發一些 3D 遊戲。"
+                "description": "跨平台遊戲引擎，易用且免費，與 C# 陪伴了我大學時期無數個寂寞的夜晚。"
             },
             "title": "遊戲開發",
             "description": "<p>是乎就後笑、他多心物外，樣訴傳，化停技要小年帶個紅：臺類幾運出。</p><p>發深念一是金怎總接方民各然開把清心斯童生南然前、精是招了衣話你的聲手請點事層益小文不友。時母動的有致長數。岸件發不覺過再們孩；選強的縣向受層：新病東；入住處星；完計中功：的說便大動還全一自球切禮發因開停開定護其。</p>"
@@ -35,35 +35,35 @@
         "webDevSkills": {
             "reactjs": {
                 "name": "React.js",
-                "description": "我使用 React 產出網頁。"
+                "description": "寫點 JavaScript 就能產出網頁，真香。"
             },
             "webpack": {
                 "name": "Webpack",
-                "description": "我使用 Webpack 打包程式碼。"
+                "description": "雖然配置的部分有點小複雜，但不能否認他是一個打包前端的好東西。"
             },
             "html": {
                 "name": "HTML",
-                "description": "我使用 HTML 架構我的網站。"
+                "description": "網頁的骨架。"
             },
             "css": {
                 "name": "CSS",
-                "description": "我使用 CSS 美化我的網站。"
+                "description": "網頁的衣服。"
             },
             "title": "網頁開發",
             "description": "<p>夫他在家點力的生院毒國未行始空香入往得的生</p><p>全我的樹省觀母園輕物年上動報、說要過重說價變，庭上星顧飛？高自的望大他部場準，麼要有會，創之奇隨是早業又此直備醫世。去手時，怕意業學最人說得腳人天？權密為分重好出企見不復度離夫進慢設……</p>"
         },
         "generalSkills": {
             "heart": {
-                "name": "炙熱的心",
-                "description": "對於寫程式的熱愛。"
+                "name": "熱情",
+                "description": "從第一個 Hello World 開始，我就對於開發遊戲、網頁這類看得到的專案抱持著十分濃厚的興趣，我很樂意將來都在這條路上發展！"
             },
             "people": {
-                "name": "同事愛",
-                "description": "處理同事間的矛盾。"
+                "name": "協作",
+                "description": "「工作上最重要的也許不是專業能力，而是團隊合作。」，這是我職涯上悟出的其中一段話。多聽聽多理解夥伴的想法，一切會更暢行無阻！"
             },
             "learning": {
-                "name": "學習力",
-                "description": "程式語言日新月異，不斷的學習才能精進自己。"
+                "name": "持續學習",
+                "description": "程式語言、開發框架日新月異，不斷的學習才能精進自己。"
             },
             "title": "普通技能",
             "description": "<p>夫他在家點力的生院毒國未行始空香入往得的生</p><p>全我的樹省觀母園輕物年上動報、說要過重說價變，庭上星顧飛？高自的望大他部場準，麼要有會，創之奇隨是早業又此直備醫世。去手時，怕意業學最人說得腳人天？權密為分重好出企見不復度離夫進慢設……</p>"
