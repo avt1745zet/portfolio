@@ -18,8 +18,8 @@
         "title": "技能",
         "gameDevSkills": {
             "typescript": {
-                "name": "Typecript",
-                "description": "Javascript 的嚴格超級，尤為鍾愛有型別概念的程式語言"
+                "name": "TypeScript",
+                "description": "JavaScript 的嚴格超級，尤為鍾愛有型別概念的程式語言"
             },
             "pixijs": {
                 "name": "Pixi.js",
@@ -74,20 +74,20 @@
         "timeline": {
             "events": [
                 {
-                    "title": "待業中",
-                    "description": "🥲"
+                    "title": "待業中⋯",
+                    "description": "<p>每天花點時間做點 leetcode、side project 維持 coding 手感。</p>"
                 },
                 {
                     "title": "捷思遊戲科技有限公司",
-                    "description": "我的第一份工作，收益良多。"
+                    "description": "<p>職位：遊戲前端工程師。</p><p>我的第一份工作，工作上使用 TypeScript、Pixi.js 開發 H5 老虎機遊戲。</p>"
                 },
                 {
                     "title": "國立虎尾科技大學",
-                    "description": "我的最高學歷，在學期間我學到非常多。"
+                    "description": "<p>科系：多媒體設計系。</p><p>在校期間專攻遊戲程式，自學 C# 以及 Unity，立志朝遊戲工程師之路前進。</p>"
                 }
             ]
         },
-        "description": "<p>起要重身，政導年些走不心！用先本喜以著家方城前，樂心老痛親時得像變？</p><p>為代場將也片見近好弟歡大門；保離產戰錢就界代問來，比史發傳候西會議股愛。無解小知題點具一一受這、家次飛種著不裡師讓歡空知分共草候東個已不，聞的道國話縣會？</p><p>電出車提職友家時層賽整小出富賽站態亮內夫題故希戲可被點回有開著民什上中事的基吸代工紀讓子，外北通研作時引影，又藝團：魚合境住不花靈一戰，些水劇有界我！</p>"
+        "description": "<p>目前工作總年資約兩年半，做過一份正職。</p><p>前一份工作在捷思遊戲就職，職位是遊戲前端工程師，做了兩年半。主要職務是開發 HTML5 跨平台老虎機遊戲、維護舊遊戲及遊戲 framework、開發遊戲的 prototype，撰寫遊戲的 features 跟 API 文件。工作使用到的程式語言為 TypeScript，遊戲 framework 由公司自己開發維護，渲染引擎是 Pixi.js。在職內總共主開發了五款遊戲、協助開發了三款遊戲，以及開發了兩款遊戲的 prototype（prototype 主要的目的是給遊戲設計師看老虎機轉起來的波動性、賠付、features 是否是他預期的樣子）。其中我覺得最有趣的任務是開發遊戲的 prototype，因為只有在這個階段能接觸到最重要的資料處理，遊戲的流程、表演正不正確都要看我 features 的 data formatter 寫得對不對，data 有錯或是 data 不夠也是在這個階段我就要發現並且跟合作的後端工程師反應，最後，為了確保 prototype 結束，後續接手的前端工程師無痛接軌，所以我總是要縝密思考資料規劃的合理性及可讀性。總而言之我在這學到了很多、認識了很多好同事，對我來說是十分有意義的一段歷程😊<</p>"
     },
     "projects": {
         "title": "業餘專案<nowarptext>（Side Project）</nowarptext>",

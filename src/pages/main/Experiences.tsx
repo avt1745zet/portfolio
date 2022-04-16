@@ -114,6 +114,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 											position: "absolute",
 											top: "-1rem",
 											fontSize: "small",
+											whiteSpace: "nowrap",
 											...isEvenNumber(index)? {
 												left: 0,
 											}: {
@@ -150,9 +151,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 									/>
 								</div>
 								{/** Description */}
-								<p style={{textAlign: "start"}}>
-									{t(item.descriptionKey)}
-								</p>
+								<Trans i18nKey={item.descriptionKey} components={{p: <p style={{textAlign: "start"}}/>}}/>
 							</div>
 							{/** Circle on vertical line */}
 							<div 
