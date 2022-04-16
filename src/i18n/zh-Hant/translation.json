@@ -160,15 +160,15 @@
         "methods": [
             {
                 "name": "電子信箱：",
-                "description": "<p>如果你想給我發電子郵件，請這樣做。</p>"
+                "description": "<p>如果想跟我聯繫的話，請發郵件給上面的信箱，並註明來意🙂</p>"
             },
             {
                 "name": "LinkedIn:",
-                "description": "<p>與巴點增，星落能。部相統是差總形，事野自投笑斯車客還有他海著他就統失高把交話可食車氣光己能治業。</p>"
+                "description": "<p>若是想了解我目前的工作職位，就來 LinkedIn 吧！</p>"
             },
             {
                 "name": "Github:",
-                "description": "<p>目個好腦竟手供興庭書主心一創日，本畫費年如又大廣期大，節也界男還。</p>"
+                "description": "<p>倘若對我的專案有興趣，就來我的 Github 逛逛吧！</p>"
             }
         ]
     }
