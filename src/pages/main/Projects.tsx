@@ -17,7 +17,7 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 			descriptionKey: "projects.projectList.0.description",
 			links: [{
 				titleKey: "projects.projectList.0.links.0.title",
-				url: "https://github.com/avt1745zet?tab=repositories"
+				url: "https://github.com/avt1745zet/portfolio"
 			}],
 			imageSrc: ProtfolioCover
 		},
