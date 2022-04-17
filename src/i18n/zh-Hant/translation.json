@@ -1,0 +1,181 @@
+{
+    "navbar": {
+        "skills": "技能",
+        "experiences": "經歷",
+        "projects": "業餘專案",
+        "contact": "聯絡方式",
+        "language": "語言",
+        "languages": {
+            "zh-Hant": "繁體中文",
+            "en": "英文"
+        }
+    },
+    "overview": {
+        "quickBio": "當個 clean coder.",
+        "introduction": "<p><big>哈囉我是YY</big>，是一名遊戲前端工程師，工作年資兩年六個月。</p><p>主要專業技能是開發遊戲前端，使用 TypeScript、Pixi.js、Unity，熟悉 OOP，略懂一些 Design Pattern，參與過跑 Scurm 的開發團隊。興趣是做遊戲、玩遊戲、看書、看動畫。自認為我的優點是對程式碼很嚴謹，無論是類別間的關係，或是變數的命名；缺點則是有時為求可讀性、乾淨，花了不少時間在幾行程式碼上⋯⋯。夢想是未來能找到一群志同道合的人開發獨立遊戲。</p>"
+    },
+    "skills": {
+        "title": "技能",
+        "gameDevSkills": {
+            "subSkills": [
+                {
+                    "name": "TypeScript",
+                    "description": "JavaScript 的嚴格超集，我尤為喜歡有型別檢查的部分。"
+                },
+                {
+                    "name": "Pixi.js",
+                    "description": "輕量、快速的 HTML5 渲染引擎，不需要 WebGL 知識的部分很吸引我😏"
+                },
+                {
+                    "name": "Unity",
+                    "description": "跨平台遊戲引擎，易用且免費，與 C# 陪伴了我大學時期無數個寂寞的夜晚。"
+                }
+            ],
+            "title": "遊戲前端開發",
+            "description": "<p>我的興趣，同時也是我琢磨最久、經驗最多的部分，就是遊戲前端開發。</p><p>相關年資兩年半，TypeScript 和 Pixi.js 是目前職涯上主要使用到的技能，所以相對熟練，而 Unity 雖然我大學時期也使用了不少時間，但過去職涯上使用到的經驗偏少，實務經驗相對薄弱，不過要是工作上需要使用到 Unity，我相信我也能很快上手，畢竟不管怎麼說，比起 Terminal，那可視化的編輯器還是非常親民。</p>"
+        },
+        "webDevSkills": {
+            "subSkills": [
+                {
+                    "name": "React.js",
+                    "description": "寫點 JavaScript 就能產出網頁，真香。"
+                },
+                {
+                    "name": "Webpack",
+                    "description": "雖然配置的部分有點小複雜，但不能否認他是一個打包前端的好東西。"
+                },
+                {
+                    "name": "HTML",
+                    "description": "網頁的骨架。"
+                },
+                {
+                    "name": "CSS",
+                    "description": "網頁的衣服。"
+                }
+            ],
+            "title": "網頁前端開發",
+            "description": "<p>當前還沒有使用到此技能的工作相關經驗，努力學習中。</p><p>之所以把網頁前端開發也列為我的專業能力，是因為我認為我有相關的基礎和興趣，雖然或許需要時不時求助 Stack Overflow，而且開發起來一定不比開發遊戲順暢，但我相信沒有學不會的技能，主要取決於付出努力的多寡而已。</p><p>現在的程度就是開發出像這樣的靜態網站，再接再厲👊</p>"
+        },
+        "generalSkills": {
+            "subSkills": [
+                {
+                    "name": "熱情",
+                    "description": "從第一個 Hello World 開始，我就對於開發遊戲、網頁這類看得到的專案抱持著十分濃厚的興趣，我很樂意將來都在這條路上發展！"
+                },
+                {
+                    "name": "協作",
+                    "description": "「工作上最重要的也許不是專業能力，而是團隊合作。」，這是我職涯上悟出的其中一段話。多聽聽多理解夥伴的想法，一切會更暢行無阻！"
+                },
+                {
+                    "name": "持續學習",
+                    "description": "程式語言、開發框架日新月異，不斷的學習才能精進自己。"
+                }
+            ],
+            "title": "泛用技能",
+            "description": "<p>工作並非只需要專業能力。</p><p>一路上走過來，不斷犯錯，不斷改進，不斷學習，不斷進步，不斷磨合，不斷尋找與團隊、與同事、與自己最合適的相處之道，持續邁進，陸續迭代出嶄新的自己。</p><p>使自己也敏捷起來。</p>"
+        }
+    },
+    "experiences": {
+        "title": "經歷",
+        "timeline": {
+            "events": [
+                {
+                    "title": "待業中⋯",
+                    "description": "<p>每天花點時間做點 leetcode、side project 維持 coding 手感。</p>"
+                },
+                {
+                    "title": "捷思遊戲科技有限公司",
+                    "description": "<p>職位：遊戲前端工程師。</p><p>我的第一份工作，工作上使用 TypeScript、Pixi.js 開發 H5 老虎機遊戲。</p>"
+                },
+                {
+                    "title": "國立虎尾科技大學",
+                    "description": "<p>科系：多媒體設計系。</p><p>在校期間專攻遊戲程式，自學 C# 以及 Unity，立志朝遊戲工程師之路前進。</p>"
+                }
+            ]
+        },
+        "description": "<p>目前工作總年資約兩年半，做過一份正職。</p><p>前一份工作在捷思遊戲就職，職位是遊戲前端工程師，做了兩年半。主要職務是開發 HTML5 跨平台老虎機遊戲、維護舊遊戲及遊戲 framework、開發遊戲的 prototype，撰寫遊戲的 features 文件、API 文件。工作使用到的程式語言為 TypeScript，遊戲 framework 由公司自己開發維護，渲染引擎是 Pixi.js。在職內共主開發了五款遊戲、協助開發了三款遊戲，以及開發了兩款遊戲的 prototype（prototype 主要的目的是給遊戲設計師看老虎機轉起來的波動性、賠付、features 是否是他預期的樣子）。其中我覺得最有趣的任務是開發遊戲的 prototype，因為只有在這個階段能接觸到最重要的資料處理，遊戲的流程、表演正不正確都要看我 features 的 data formatter 寫得對不對，data 有錯或是 data 不夠也是在這個階段我就要發現並且跟合作的後端工程師反應，最後，為了確保 prototype 結束，後續接手的前端工程師無痛接軌，所以我總是要縝密思考資料規劃的合理性及可讀性。總而言之我在這學到了很多、認識了很多好同事，對我來說是十分有意義的一段歷程😊</p>"
+    },
+    "projects": {
+        "title": "業餘專案<nowarptext>（Side Project）</nowarptext>",
+        "type": "類型：",
+        "projectType": [
+            "遊戲",
+            "網頁",
+            "工具"
+        ],
+        "projectList": [
+            {
+                "name": "Portfolio（這個網站） ",
+                "description": "<p>我認為比起紙本履歷，網頁能呈現更多的東西，所以就做了這個專案。</p><p>本專案主要使用了 react、<nowarptext>react-bootstrap</nowarptext>、<nowarptext>react-i18next</nowarptext>、webpack。i18next 是第一次使用，原來多語系可以那麼簡單🥹</p>",
+                "links": [
+                    {
+                        "title": "Repo 連結"
+                    }
+                ]
+            },
+            {
+                "name": "尋找不同的顏色",
+                "description": "<p>第一次嘗試用純網頁做遊戲，選擇了規則比較簡單明確的類型，玩法就是找到不同的顏色然後點他，就這樣！</p><p>本專案主要使用了 react、<nowarptext>material-ui</nowarptext>、webpack。</p>",
+                "links": [
+                    {
+                        "title": "網頁連結"
+                    },
+                    {
+                        "title": "Repo 連結"
+                    }
+                ]
+            },
+            {
+                "name": "隨機顏色產生器",
+                "description": "<p>正如其名就是一個隨機產生顏色的小工具，或許對於要用什麼顏色沒有靈感時，會派上用場吧？👀</p><p>本專案主要使用了 react、<nowarptext>react-native</nowarptext>。</p>",
+                "links": [
+                    {
+                        "title": "網頁連結"
+                    },
+                    {
+                        "title": "Repo 連結"
+                    }
+                ]
+            },
+            {
+                "name": "Reel Tools",
+                "description": "<p>這個專案蠻特殊的，是在第一份工作在職，手頭上沒有任務時做的。（反正閒著也是閒著，不如做點有意義的事）</p><p>這個專案涵括五花八門的功能，這些功能都是慢慢收集工程師開發跟 QA 測試的痛點下去做的，使用者就是他們，大受好評。</p><p>本專案主要使用了 react、<nowarptext>material-ui</nowarptext>、<nowarptext>react-router-dom</nowarptext>、webpack，順帶一提這是我第一次使用 react，感想就是 react 真是個好東西😇</p>",
+                "links": [
+                    {
+                        "title": "網頁連結"
+                    },
+                    {
+                        "title": "Repo 連結"
+                    }
+                ]
+            },
+            {
+                "name": "大學遊戲作品集",
+                "description": "<p>大學的遊戲作品集網站，大學剛畢業不久時做的，若是對我大學做的遊戲有興趣不妨也可以進去看看，那些遊戲主要都是使用 Unity 進行開發。</p><p>本專案使用 HTML、bootstrap 以及 JQuery 開發而成。</p>",
+                "links": [
+                    {
+                        "title": "網頁連結"
+                    }
+                ]
+            }
+        ],
+        "description": "<p>不知道自己曾經在哪裡看過的一句話：「學程式設計的人不能不做 Side Project。」，雖然這句話我覺得有點過於極端，但是不得不說開發 Side Project 確實好處多多（自己體會到的），唯一要顧慮的只有自己的時間要如何去分配而已。</p><p>以下內容是我在閒暇之餘開發的 Side Projects（排序越後面時代越久遠），有些是開發來作為某些特殊用途，有些是純粹開發好玩，而無論是哪種，開發途中總是能學習到新知識、體悟到新感想。</p>"
+    },
+    "contact": {
+        "title": "聯絡方式",
+        "methods": [
+            {
+                "name": "電子信箱：",
+                "description": "<p>如果想跟我聯繫的話，請發郵件給上面的信箱，並註明來意🙂</p>"
+            },
+            {
+                "name": "LinkedIn:",
+                "description": "<p>若是想了解我目前的工作職位，就來 LinkedIn 吧！</p>"
+            },
+            {
+                "name": "Github:",
+                "description": "<p>倘若對我的專案有興趣，就來我的 Github 逛逛吧！</p>"
+            }
+        ]
+    }
+}
