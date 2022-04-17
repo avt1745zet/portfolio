@@ -21,20 +21,20 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 			descriptionKey: "skills.gameDevSkills.description",
 			subSkills: [
 				{
-					nameKey:"skills.gameDevSkills.typescript.name",
-					descriptionKey: "skills.gameDevSkills.typescript.description",
+					nameKey:"skills.gameDevSkills.subSkills.0.name",
+					descriptionKey: "skills.gameDevSkills.subSkills.0.description",
 					icon: <TypescriptLogo width="5rem" height="5rem"/>,
 					proficiency: 90
 				},
 				{
-					nameKey: "skills.gameDevSkills.pixijs.name",
-					descriptionKey: "skills.gameDevSkills.pixijs.description",
+					nameKey: "skills.gameDevSkills.subSkills.1.name",
+					descriptionKey: "skills.gameDevSkills.subSkills.1.description",
 					icon: <PixijsLogo width="5rem" height="5rem"/>,
-					proficiency: 80
+					proficiency: 85
 				},
 				{
-					nameKey: "skills.gameDevSkills.unity.name",
-					descriptionKey: "skills.gameDevSkills.unity.description",
+					nameKey: "skills.gameDevSkills.subSkills.2.name",
+					descriptionKey: "skills.gameDevSkills.subSkills.2.description",
 					icon: <UnityLogo width="5rem" height="5rem"/>,
 					proficiency: 70
 				}
@@ -45,28 +45,28 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 			descriptionKey: "skills.webDevSkills.description",
 			subSkills: [
 				{
-					nameKey: "skills.webDevSkills.reactjs.name",
-					descriptionKey: "skills.webDevSkills.reactjs.description",
+					nameKey: "skills.webDevSkills.subSkills.0.name",
+					descriptionKey: "skills.webDevSkills.subSkills.0.description",
 					icon: <ReactLogo width="5rem" height="5rem"/>,
-					proficiency: 80
+					proficiency: 75
 				},
 				{
-					nameKey: "skills.webDevSkills.webpack.name",
-					descriptionKey: "skills.webDevSkills.webpack.description",
+					nameKey: "skills.webDevSkills.subSkills.1.name",
+					descriptionKey: "skills.webDevSkills.subSkills.1.description",
 					icon: <WebpackLogo width="5rem" height="5rem"/>,
-					proficiency: 70
+					proficiency: 75
 				},
 				{
-					nameKey: "skills.webDevSkills.html.name",
-					descriptionKey: "skills.webDevSkills.html.description",
+					nameKey: "skills.webDevSkills.subSkills.2.name",
+					descriptionKey: "skills.webDevSkills.subSkills.2.description",
 					icon: <HtmlLogo width="5rem" height="5rem"/>,
 					proficiency: 90
 				},
 				{
-					nameKey: "skills.webDevSkills.css.name",
-					descriptionKey: "skills.webDevSkills.css.description",
+					nameKey: "skills.webDevSkills.subSkills.3.name",
+					descriptionKey: "skills.webDevSkills.subSkills.3.description",
 					icon: <CssLogo width="5rem" height="5rem"/>,
-					proficiency: 75
+					proficiency: 70
 				}
 			]
 		},
@@ -75,20 +75,20 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 			descriptionKey: "skills.generalSkills.description",
 			subSkills: [
 				{
-					nameKey: "skills.generalSkills.heart.name",
-					descriptionKey: "skills.generalSkills.heart.description",
+					nameKey: "skills.generalSkills.subSkills.0.name",
+					descriptionKey: "skills.generalSkills.subSkills.0.description",
 					icon: <HeartIcon width="5rem" height="5rem"/>,
 					proficiency: 100
 				},
 				{
-					nameKey: "skills.generalSkills.people.name",
-					descriptionKey: "skills.generalSkills.people.description",
+					nameKey: "skills.generalSkills.subSkills.1.name",
+					descriptionKey: "skills.generalSkills.subSkills.1.description",
 					icon: <PeopleIcon width="5rem" height="5rem"/>,
 					proficiency: 100
 				},
 				{
-					nameKey: "skills.generalSkills.learning.name",
-					descriptionKey: "skills.generalSkills.learning.description",
+					nameKey: "skills.generalSkills.subSkills.2.name",
+					descriptionKey: "skills.generalSkills.subSkills.2.description",
 					icon: <BookIcon width="5rem" height="5rem"/>,
 					proficiency: 100
 				}
