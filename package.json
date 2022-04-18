@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Just a personal portfolio project, using react, react-bootstrap and webpack.",
   "main": "src/index.tsx",
   "scripts": {
