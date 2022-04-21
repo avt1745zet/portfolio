@@ -12,14 +12,14 @@
     },
     "overview": {
         "quickBio": "Be a clean coder.",
-        "introduction": "<p><big>Hello, I'm YY</big>, a game front-end engineer with two years and six months of work experience. </p><p>Main technical skill is developing game front-end, using TypeScript, Pixi.js, Unity, familiar with OOP, a little understanding of design patterns, and participated in the development team running Scurm. Hobbies are making games, playing games, reading books, watching animations. The advantage of myself is that I am very strict with the code, whether it is the relationship between classes or the naming of variables; the disadvantage is that sometimes I spend a lot of time in a few lines for the readability and cleanliness of the code... The dream is to find a group of like-minded people to develop independent games in the future.</p>"
+        "introduction": "<p><big>Hello, I'm YY</big>, a game front-end engineer with two years and six months of work experience. </p><p>Main technical skill is developing game front-end, using TypeScript, Pixi.js, Unity, familiar with OOP, a little understanding of design patterns, and participated in the development team running Scurm. Hobbies are making video games, playing video games, reading books, watching animations. The advantage of myself is that I am very strict with the code, whether it is the relationship between classes or the naming of variables; the disadvantage is that sometimes I spend a lot of time in a few lines for the readability and cleanliness of the code... The dream is to find a group of like-minded people to develop independent games in the future.</p>"
     },
     "skills": {
         "title": "Skills",
         "gameDevSkills": {
             "subSkills": [
                 {
-                    "name": "Typecript",
+                    "name": "TypeScript",
                     "description": "A strict superset of JavaScript, I especially like the type-checked part."
                 },
                 {
