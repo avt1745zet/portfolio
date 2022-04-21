@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import Experiences from "./Experiences";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import GlobeIcon from "bootstrap-icons/icons/globe.svg";
 
 const MainPage = () => {
 	const [navbarExpanded, setNavbarExpanded] = useState(false);
@@ -91,7 +92,18 @@ const MainPage = () => {
 							<Nav.Link href="#contact" active={currentSection==="contact"}>
 								{t("navbar.contact")}
 							</Nav.Link>
-							<NavDropdown title={t("navbar.language")} menuVariant="dark" onSelect={handleNavbarDropdownSelect}>
+							<NavDropdown 
+								title={
+									<Fragment>
+										<GlobeIcon width="1rem" height="1rem" style={{
+											verticalAlign: "text-bottom"
+										}}/>
+										{t("navbar.language")}
+									</Fragment> 
+								} 
+								menuVariant="dark" 
+								onSelect={handleNavbarDropdownSelect}
+							>
 								<NavDropdown.Item eventKey={"zh-Hant"}>
 									{t("navbar.languages.zh-Hant")}
 								</NavDropdown.Item>
