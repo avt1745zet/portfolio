@@ -30,11 +30,8 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 				</h1>
 			</header>
 			<Row>
-				<Col xs={12} lg={6}>
+				<Col xs={12}>
 					<Timeline items={timelineItemData}/>
-				</Col>
-				<Col xs={12} lg={6} className="align-self-center">
-					<Trans i18nKey="experiences.description" components={{p: <p/>}}/>
 				</Col>
 			</Row>
 		</section>
@@ -58,38 +55,25 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 					backgroundColor: "white",
 					top: "-1rem",
 					bottom: 0,
-					left: "calc(50% - 1px)"
+					left: "-1px"
 				}}
 			/>
 			{
 				items.map((item, index) => {
-					const isEvenNumber = (num: number) => {
-						return num % 2 === 0;
-					};
 					return (
 						<div 
 							key={index}
 							style={{
 								position: "relative",
-								marginBlock: "1rem",
-								...isEvenNumber(index)? {
-									marginLeft: "50%"
-								}: {
-									marginRight: "50%"
-								}
+								marginBlock: "1rem"
 							}}
 						>
 							{/** Block with title and description */}
 							<div 
 								style={{
 									padding: "0.5rem",
-									...isEvenNumber(index)? {
-										textAlign: "start",
-										marginLeft: "1rem"
-									}: {
-										textAlign: "end",
-										marginRight: "1rem"
-									}
+									textAlign: "start",
+									marginLeft: "1rem"
 								}}
 							>
 								{/** Title block */}
@@ -101,25 +85,17 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 										borderWidth: "0px",
 										backgroundColor: "white",
 										padding: "0.3rem",
-										...isEvenNumber(index)? {
-											borderRadius: "0 10px 10px 10px",
-										}: {
-											borderRadius: "10px 0 10px 10px",
-										}
+										borderRadius: "0 10px 10px 10px",
 									}}
 								>
 									{/** Time interval */}
 									<i 
 										style={{
 											position: "absolute",
-											top: "-1rem",
+											top: "-1.2rem",
 											fontSize: "small",
 											whiteSpace: "nowrap",
-											...isEvenNumber(index)? {
-												left: 0,
-											}: {
-												right: 0,
-											}
+											left: 0,
 										}}
 									>
 										{
@@ -138,20 +114,14 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 											position: "absolute",
 											top: 0,
 											borderStyle: "solid",
-											...isEvenNumber(index)? {
-												left: "-10px",
-												borderColor: "transparent white transparent transparent",
-												borderWidth: "0 10px 10px 0",
-											}: {
-												right: "-10px",
-												borderColor: "transparent transparent transparent white",
-												borderWidth: "0 0 10px 10px",
-											}
+											left: "-10px",
+											borderColor: "transparent white transparent transparent",
+											borderWidth: "0 10px 10px 0",
 										}}
 									/>
 								</div>
 								{/** Description */}
-								<Trans i18nKey={item.descriptionKey} components={{p: <p style={{textAlign: "start"}}/>}}/>
+								<Trans i18nKey={item.descriptionKey} components={{p: <p style={{marginTop: "0.2rem", textAlign: "start"}}/>}}/>
 							</div>
 							{/** Circle on vertical line */}
 							<div 
@@ -165,11 +135,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 									borderWidth: "4px",
 									width: "1.5rem",
 									height: "1.5rem",
-									...isEvenNumber(index)? {
-										left: "-0.75rem",
-									}: {
-										right: "-0.75rem",
-									}
+									left: "-0.75rem",
 								}}
 							/>
 						</div>
