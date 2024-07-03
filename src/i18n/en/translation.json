@@ -77,11 +77,11 @@
             "events": [
                 {
                     "title": "Chuanghui Technology Co., Ltd",
-                    "description": "<p>Position: Game front-end engineer.</p><p>Using TypeScript and Cocos Creator to develop HTML5 chess & card games.</p>"
+                    "description": "<p>Position: Game front-end engineer<br>Tools used: Cocos Creator, Typescript. </p><p>Main work content:</p><ul><li>Develop real-person chess and card games. </li><li>Develop chat room feature. </li><li>Develop reward dealer feature. </li><li>Develop follow dealer feature. </li><li>Develop announcement feature. </li><li>Develop a mini-game that polls requests. </li><li>Optimize memory consumption and Drawcall. </li></ul><p>During my tenure, I developed roulette, color wheel, and Sic Bo into the live chess and card product, as well as added many peripheral functions, such as chat rooms, rewarding dealers, Pay attention to the dealer. Subsequently, mini-game based on HTTP polling were also developed and entered into other product lines. </p><p>In addition to these visible things, I also solved some problems related to device heating and game lagging, and learned a lot of Cocos Creator optimization techniques and settings. </p>"
                 },
                 {
                     "title": "The Dojo Software Solutions Inc.",
-                    "description": "<p>Position: Game front-end engineer.</p><p>My first job, using TypeScript and Pixi.js to develop HTML5 slot games.</p><p>The current total working experience is about two and a half years, and I have worked in one company.</p><p>The previous job was in The Dojo Software Solutions Inc., as a game front-end engineer for two and a half years. The main duties are to develop HTML5 cross-platform slot games, maintain old games and game framework, develop game prototypes, and write game feature documents and API documents. The programming language used in the work is TypeScript, the game framework is developed and maintained by the company itself, and the rendering engine is Pixi.js. During the job, I has developed five games, assisted in the development of three games, and developed the prototypes of two games (the main purpose of the prototype is to show the game designer whether the volatility, payout, and features of the slot game are what he expected look). Among them, I think the most interesting task is to develop the prototype of the game, because only at this process can I get access to the most important data processing. The states of the game and whether the performance is correct depends on whether the feature data formatters of my is written correctly. If the data has incorrect or lacking, I need to report to the back-end engineer I cooperated with. Finally, to make sure that the front-end engineer who takes over doesn't have a headache, so I always have to think carefully about the rationality of data planning and readability. All in all, I have learned a lot and met a lot of good colleagues here. It is a very meaningful time  for me😊</p>"
+                    "description": "<p>Position: Game front-end engineer. <br>Tools used: Pixi.js, Typescript. </p><p>Main work content:</p><ul><li>Develop H5 slot games. </li><li>Maintain the underlying framework and old slot games. </li><li>Develop game prototype. </li><li>Write API documentation. </li></ul><p>While on the job, I develop five games, assisted in the development of three games, and developed prototypes of two games. </p><p>I think the most interesting task is to develop the prototype of the game, because only at this stage can you have access to the most important back-end data and game state processing, and in order to ensure that the prototype is completed, colleagues who will take over later can It’s difficult to adapt, so I always have to think carefully about the rationality and readability of data planning. </p><p>I have learned a lot and met many good colleagues here. It is a very meaningful journey for me😊</p>"
                 },
                 {
                     "title": "National Formosa University.",
@@ -150,6 +150,15 @@
                 "links": [
                     {
                         "title": "Website link"
+                    }
+                ]
+            },
+            {
+                "name": "Heaven burns red pick simulator",
+                "description": "<p>I made a card picking simulator in my spare time to satisfy those who don’t have enough money but want to pick cards.</p><p>This project is developed using react, redux, firebase, Google sheet API, webbpack.</p>",
+                "links": [
+                    {
+                        "title": "網頁連結"
                     }
                 ]
             }

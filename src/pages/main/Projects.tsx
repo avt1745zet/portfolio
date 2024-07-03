@@ -3,6 +3,7 @@ import { Card, Col, Row } from "react-bootstrap";
 import { Trans, useTranslation } from "react-i18next";
 import ColorGeneratorCover from "./../../assets/images/projectCovers/project-cover-color-generator.png";
 import FindDifferentColorsCover from "./../../assets/images/projectCovers/project-cover-find-different-colors.png";
+import HBR_PickSimulatorCover from "./../../assets/images/projectCovers/project-cover-hbr-pick-simulator.png";
 import ProtfolioCover from "./../../assets/images/projectCovers/project-cover-portfolio.png";
 import ReelToolsCover from "./../../assets/images/projectCovers/project-cover-reel-tools.png";
 import UniversityGamePortfolioCover from "./../../assets/images/projectCovers/project-cover-university-game-portfolio.png";
@@ -11,6 +12,16 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 	const {...other} = props;
 	const [t] = useTranslation();
 	const projectInfoData: Array<IProjectInfo> = new Array<IProjectInfo>(
+		{
+			nameKey: "projects.projectList.5.name",
+			type: ProjectType.WEB,
+			descriptionKey: "projects.projectList.5.description",
+			links: [{
+				titleKey: "projects.projectList.5.links.0.title",
+				url: "https://linmina1996.github.io/hbr-pick-simulator/"
+			}],
+			imageSrc: HBR_PickSimulatorCover
+		},
 		{
 			nameKey: "projects.projectList.0.name",
 			type: ProjectType.WEB,

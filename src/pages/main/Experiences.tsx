@@ -121,7 +121,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 									/>
 								</div>
 								{/** Description */}
-								<Trans i18nKey={item.descriptionKey} components={{p: <p style={{marginTop: "0.2rem", textAlign: "start"}}/>}}/>
+								<Trans i18nKey={item.descriptionKey} components={{p: <p style={{marginTop: "0.2rem"}}/>, ul: <ul/>, li: <li/>}}/>
 							</div>
 							{/** Circle on vertical line */}
 							<div 
