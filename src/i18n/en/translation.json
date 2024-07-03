@@ -1,180 +1,185 @@
 {
-    "navbar": {
-        "skills": "Skills",
-        "experiences": "Experiences",
-        "projects": "Side Projects",
-        "contact": "Contact",
-        "language": "Language",
-        "languages": {
-            "zh-Hant": "Traditional Chinese",
-            "en": "English"
-        }
-    },
-    "overview": {
-        "quickBio": "Be a clean coder.",
-        "introduction": "<p><big>Hello, I'm YY</big>, a game front-end engineer with two years and six months of work experience. </p><p>Main technical skill is developing game front-end, using TypeScript, Pixi.js, Unity, familiar with OOP, a little understanding of design patterns, and participated in the development team running Scurm. Hobbies are making video games, playing video games, reading books, watching animations. The advantage of myself is that I am very strict with the code, whether it is the relationship between classes or the naming of variables; the disadvantage is that sometimes I spend a lot of time in a few lines for the readability and cleanliness of the code... The dream is to find a group of like-minded people to develop independent games in the future.</p>"
-    },
-    "skills": {
-        "title": "Skills",
-        "gameDevSkills": {
-            "subSkills": [
-                {
-                    "name": "TypeScript",
-                    "description": "A strict superset of JavaScript, I especially like the type-checked part."
-                },
-                {
-                    "name": "Pixi.js",
-                    "description": "Lightweight, fast HTML5 rendering engine, the part that doesn't require WebGL knowledge is what appeals to me 😏"
-                },
-                {
-                    "name": "Unity",
-                    "description": "Cross-platform game engine, easy-to-use and free. It and C# accompanied my many lonely nights in college."
-                }
-            ],
-            "title": "Game Front-End Development",
-            "description": "<p>Game Front-End Development is My interest, and also the part I have the most experience.</p><p>The relevant working experience is two and a half years. TypeScript and Pixi.js are the main skills used in my past career, so those are relatively proficient. Although I have used Unity for a lot of time in college, I have used less experience in my career in the past, and my practical experience is relatively weak. However, if I need to use Unity in my work , I believe I can get started quickly, after all, the visual editor is still very close to the people compared to Terminal.</p>"
-        },
-        "webDevSkills": {
-            "subSkills": [
-                {
-                    "name": "React.js",
-                    "description": "Just write some JavaScript and you can generate a web page. It's so nice."
-                },
-                {
-                    "name": "Webpack",
-                    "description": "Although the configuration part is a little complicated, it cannot be denied that it is a good tool for packaging the front end."
-                },
-                {
-                    "name": "HTML",
-                    "description": "The skeleton of the web page."
-                },
-                {
-                    "name": "CSS",
-                    "description": "The clothes of the web page."
-                }
-            ],
-            "title": "Web Front-End Development",
-            "description": "<p>There is no work-related experience using this skill at present, and I am studying hard.</p><p>The reason why front-end web development is also listed as my skill is because I think I have the relevant foundation and interest, although I may need to search Stack Overflow from time to time, and the development of webs must not be smoother than the development of games, but I believe that there are no skills that cannot be learned, mainly depends on the amount of effort.</p><p>The current level of my web front-end is develop a static website like this, keep up learning 👊</p>"
-        },
-        "generalSkills": {
-            "subSkills": [
-                {
-                    "name": "Enthusiasm",
-                    "description": "Since the first Hello World project, I have been very interested in developing games, web pages, and I am very happy to develop on this road in the future!"
-                },
-                {
-                    "name": "Collaboration",
-                    "description": "\"Perhaps the most important thing in work is not professional skills, but teamwork.\" This is one of the sentences I realized in my career. Listen to and understand the ideas of your partners more, and everything will be smoother!"
-                },
-                {
-                    "name": "Keep Learning",
-                    "description": "Programming Languages and development frameworks are changing with each passing day. Only by keep learning can you strengthen yourself."
-                }
-            ],
-            "title": "General Skill",
-            "description": "<p>Work doesn't just require professional skills.</p><p>Keep making mistakes, keep improving, keep learning, keep finding the most suitable way to get along with the team, with colleagues, and with yourself, keep moving forward, and iterate one after another new self.</p><p>Make yourself agile too.</p>"
-        }
-    },
-    "experiences": {
-        "title": "Experiences",
-        "timeline": {
-            "events": [
-                {
-                    "title": "Chuanghui Technology Co., Ltd",
-                    "description": "<p>Position: Game front-end engineer.</p><p>Using TypeScript and Cocos Creator to develop HTML5 chess & card games.</p>"
-                },
-                {
-                    "title": "The Dojo Software Solutions Inc.",
-                    "description": "<p>Position: Game front-end engineer.</p><p>My first job, using TypeScript and Pixi.js to develop HTML5 slot games.</p><p>The current total working experience is about two and a half years, and I have worked in one company.</p><p>The previous job was in The Dojo Software Solutions Inc., as a game front-end engineer for two and a half years. The main duties are to develop HTML5 cross-platform slot games, maintain old games and game framework, develop game prototypes, and write game feature documents and API documents. The programming language used in the work is TypeScript, the game framework is developed and maintained by the company itself, and the rendering engine is Pixi.js. During the job, I has developed five games, assisted in the development of three games, and developed the prototypes of two games (the main purpose of the prototype is to show the game designer whether the volatility, payout, and features of the slot game are what he expected look). Among them, I think the most interesting task is to develop the prototype of the game, because only at this process can I get access to the most important data processing. The states of the game and whether the performance is correct depends on whether the feature data formatters of my is written correctly. If the data has incorrect or lacking, I need to report to the back-end engineer I cooperated with. Finally, to make sure that the front-end engineer who takes over doesn't have a headache, so I always have to think carefully about the rationality of data planning and readability. All in all, I have learned a lot and met a lot of good colleagues here. It is a very meaningful time  for me😊</p>"
-                },
-                {
-                    "title": "National Formosa University.",
-                    "description": "<p>My major is Multimedia Design.</p><p>During school, I specialized in game programming, self-taught C# and Unity, and determined to move forward on the road of game engineer.</p>"
-                }
-            ]
-        }
-    },
-    "projects": {
-        "title": "Side Projects",
-        "type": "Type: ",
-        "projectType": [
-            "Game",
-            "Web",
-            "Tool"
-        ],
-        "projectList": [
-            {
-                "name": "Portfolio(This website)",
-                "description": "<p>I think a web page could show more information than a paper CV, so I made this project.</p><p>This project mainly uses react, <nowarptext>react-bootstrap</nowarptext>, <nowarptext>react-i18next</nowarptext>, and webpack. I am using i18next for the first time, I never thought that a multilingual system could be so simple 🥹</p>",
-                "links": [
-                    {
-                        "title": "Repo link"
-                    }
-                ]
-            },
-            {
-                "name": "Find Different Colors",
-                "description": "<p>First time I tried to make a game with a pure web page. I chose a game with relatively simple and clear rules. The gameplay is to find a different color and click on it, that's all!</p><p>This project mainly uses react, <nowarptext>material-ui</nowarptext>, and webpack.</p>",
-                "links": [
-                    {
-                        "title": "Website link"
-                    },
-                    {
-                        "title": "Repo link"
-                    }
-                ]
-            },
-            {
-                "name": "Random Color Generator",
-                "description": "<p>A little tool that randomly generates colors, maybe it will come in handy when you have no inspiration for what colors to use?👀</p><p>This project mainly uses react, <nowarptext>react-native</nowarptext>.</p>",
-                "links": [
-                    {
-                        "title": "Website link"
-                    },
-                    {
-                        "title": "Repo link"
-                    }
-                ]
-            },
-            {
-                "name": "Reel Tools",
-                "description": "<p>This project is quite special. It was done when I was in my first job and no task time. (Anyway, if you are idle, It is better to do something meaningful.)</p><p>This project includes a variety of features. These features are picked by collecting the pain points of engineer development and QA testing. User were engineer and QA, they liked this tool.</p><p>This project mainly uses react, <nowarptext>material-ui</nowarptext>, <nowarptext>react-router-dom</nowarptext>, webpack, by the way, this is my first time using react, I really loved it 😇</p>",
-                "links": [
-                    {
-                        "title": "Website link"
-                    },
-                    {
-                        "title": "Repo link"
-                    }
-                ]
-            },
-            {
-                "name": "University Game Portfolio",
-                "description": "<p>The website of the university's game portfolio. It was made when I graduated from university. If you are interested in the games made by me past, you may as well go and have a look. Those games are mainly developed using Unity.</p><p>This project is developed using HTML, bootstrap and JQuery.</p>",
-                "links": [
-                    {
-                        "title": "Website link"
-                    }
-                ]
-            }
-        ],
-        "description": "<p>I don't know where I've seen a sentence: \"People who learn programming must do side projects.\" Although I think this sentence is a bit extreme, I have to say that developing side project is indeed a lot of benefits (myself experience), the only thing to worry about is how to allocate your time.</p><p>The following content is the side projects I developed in my spare time (the later in the order, the learlier), some are developed for some special purposes, some are purely developed for fun, and no matter what kind, On the way to development, I can always learn new knowledge and experience new feelings.</p>"
-    },
-    "contact": {
-        "title": "Contact",
-        "methods": [
-            {
-                "name": "Email:",
-                "description": "<p>If you want to contact me, please send an email to the above mailbox and indicate your purpose 🙂</p>"
-            },
-            {
-                "name": "LinkedIn:",
-                "description": "<p>If you want to know about my current job position, come to LinkedIn!</p>"
-            },
-            {
-                "name": "Github:",
-                "description": "<p>If you are interested in my project, come and visit my Github!</p>"
-            }
-        ]
-    }
+	"navbar": {
+		"skills": "Skills",
+		"experiences": "Experiences",
+		"projects": "Side Projects",
+		"contact": "Contact",
+		"language": "Language",
+		"languages": {
+			"zh-Hant": "Traditional Chinese",
+			"en": "English"
+		}
+	},
+	"overview": {
+		"quickBio": "Be a clean coder.",
+		"introduction": "<p><big>Hello, I'm Shane </big>. I'm a game front-end engineer with four years and eight months of experience. </p><p>My main professional skill is developing game front-end. I am familiar with TypeScript, Cocos Creator, Pixi.js, Unity, OOP, have some knowledge of Design Pattern, and have developed slot games and real-person chess and card games. My hobbies are playing games, reading books, and watching animations. I think my advantage is that I am very strict about the code, whether it is the relationship between categories or the naming of variables; my disadvantage is that sometimes I spend a lot of time on a few lines of code for the sake of readability and cleanliness... . The dream is to find a group of like-minded people to develop independent games in the future. </p>"
+	},
+	"skills": {
+		"title": "Skills",
+		"gameDevSkills": {
+			"subSkills": [
+				{
+					"name": "Cocos Creator",
+					"description": "2 years of experience in Cocos Creator development. I have used it to develop real-person chess and card games and mini-games. I'm familiar with its components and related optimization."
+				},
+				{
+					"name": "Pixi.js",
+					"description": "2 years of experience in Pixi.js development and used it to develop slot games."
+				},
+				{
+					"name": "Unity",
+					"description": "It was the development engine I mainly used in college, and I occasionally come into contact with it now."
+				}
+			],
+			"title": "Game Front-End Development",
+			"description": "<p>Game Front-End Development is My interest, and also the part I have the most experience.</p><p>The relevant working experience is two and a half years. TypeScript and Pixi.js are the main skills used in my past career, so those are relatively proficient. Although I have used Unity for a lot of time in college, I have used less experience in my career in the past, and my practical experience is relatively weak. However, if I need to use Unity in my work , I believe I can get started quickly, after all, the visual editor is still very close to the people compared to Terminal.</p>"
+		},
+		"webDevSkills": {
+			"subSkills": [
+				{
+					"name": "React.js",
+					"description": "I taught myself the web development framework in my spare time, but I still have no practical experience and can write simple web pages."
+				},
+				{
+					"name": "Webpack",
+					"description": "I have a little understanding of it, although the configuration part is a bit complicated, but after clarifying it, it is a very useful tool."
+				},
+				{
+					"name": "CSS",
+					"description": "Familiar with basic CSS settings, but still learning more advanced ones."
+				}
+			],
+			"title": "Web Front-End Development",
+			"description": "<p>There is no work-related experience using this skill at present, and I am studying hard.</p><p>The reason why front-end web development is also listed as my skill is because I think I have the relevant foundation and interest, although I may need to search Stack Overflow from time to time, and the development of webs must not be smoother than the development of games, but I believe that there are no skills that cannot be learned, mainly depends on the amount of effort.</p><p>The current level of my web front-end is develop a static website like this, keep up learning 👊</p>"
+		},
+		"generalSkills": {
+			"subSkills": [
+				{
+					"name": "Enthusiasm",
+					"description": "Since the first Hello World project, I have been very interested in developing games, web pages, and I am very happy to develop on this road in the future!"
+				},
+				{
+					"name": "Collaboration",
+					"description": "\"Perhaps the most important thing in work is not professional skills, but teamwork.\" This is one of the sentences I realized in my career. Listen to and understand the ideas of your partners more, and everything will be smoother!"
+				},
+				{
+					"name": "Keep Learning",
+					"description": "Programming Languages and development frameworks are changing with each passing day. Only by keep learning can you strengthen yourself."
+				}
+			],
+			"title": "General Skill",
+			"description": "<p>Work doesn't just require professional skills.</p><p>Keep making mistakes, keep improving, keep learning, keep finding the most suitable way to get along with the team, with colleagues, and with yourself, keep moving forward, and iterate one after another new self.</p><p>Make yourself agile too.</p>"
+		}
+	},
+	"experiences": {
+		"title": "Experiences",
+		"timeline": {
+			"events": [
+				{
+					"title": "Chuanghui Technology Co., Ltd",
+					"description": "<p>Position: Game front-end engineer<br>Tools used: Cocos Creator, Typescript. </p><p>Main work content:</p><ul><li>Develop real-person chess and card games. </li><li>Develop chat room feature. </li><li>Develop reward dealer feature. </li><li>Develop follow dealer feature. </li><li>Develop announcement feature. </li><li>Develop a mini-game that polls requests. </li><li>Optimize memory consumption and Drawcall. </li></ul><p>During my tenure, I developed roulette, color wheel, and Sic Bo into the live chess and card product, as well as added many peripheral functions, such as chat rooms, rewarding dealers, Pay attention to the dealer. Subsequently, mini-game based on HTTP polling were also developed and entered into other product lines. </p><p>In addition to these visible things, I also solved some problems related to device heating and game lagging, and learned a lot of Cocos Creator optimization techniques and settings. </p>"
+				},
+				{
+					"title": "The Dojo Software Solutions Inc.",
+					"description": "<p>Position: Game front-end engineer. <br>Tools used: Pixi.js, Typescript. </p><p>Main work content:</p><ul><li>Develop H5 slot games. </li><li>Maintain the underlying framework and old slot games. </li><li>Develop game prototype. </li><li>Write API documentation. </li></ul><p>While on the job, I develop five games, assisted in the development of three games, and developed prototypes of two games. </p><p>I think the most interesting task is to develop the prototype of the game, because only at this stage can you have access to the most important back-end data and game state processing, and in order to ensure that the prototype is completed, colleagues who will take over later can It’s difficult to adapt, so I always have to think carefully about the rationality and readability of data planning. </p><p>I have learned a lot and met many good colleagues here. It is a very meaningful journey for me😊</p>"
+				},
+				{
+					"title": "National Formosa University.",
+					"description": "<p>My major is Multimedia Design.</p><p>During school, I specialized in game programming, self-taught C# and Unity, and determined to move forward on the road of game engineer.</p>"
+				}
+			]
+		}
+	},
+	"projects": {
+		"title": "Side Projects",
+		"type": "Type: ",
+		"projectType": [
+			"Game",
+			"Web",
+			"Tool"
+		],
+		"projectList": [
+			{
+				"name": "Portfolio(This website)",
+				"description": "<p>I think a web page could show more information than a paper CV, so I made this project.</p><p>This project mainly uses react, <nowarptext>react-bootstrap</nowarptext>, <nowarptext>react-i18next</nowarptext>, and webpack. I am using i18next for the first time, I never thought that a multilingual system could be so simple 🥹</p>",
+				"links": [
+					{
+						"title": "Repo link"
+					}
+				]
+			},
+			{
+				"name": "Find Different Colors",
+				"description": "<p>First time I tried to make a game with a pure web page. I chose a game with relatively simple and clear rules. The gameplay is to find a different color and click on it, that's all!</p><p>This project mainly uses react, <nowarptext>material-ui</nowarptext>, and webpack.</p>",
+				"links": [
+					{
+						"title": "Website link"
+					},
+					{
+						"title": "Repo link"
+					}
+				]
+			},
+			{
+				"name": "Random Color Generator",
+				"description": "<p>A little tool that randomly generates colors, maybe it will come in handy when you have no inspiration for what colors to use?👀</p><p>This project mainly uses react, <nowarptext>react-native</nowarptext>.</p>",
+				"links": [
+					{
+						"title": "Website link"
+					},
+					{
+						"title": "Repo link"
+					}
+				]
+			},
+			{
+				"name": "Reel Tools",
+				"description": "<p>This project is quite special. It was done when I was in my first job and no task time. (Anyway, if you are idle, It is better to do something meaningful.)</p><p>This project includes a variety of features. These features are picked by collecting the pain points of engineer development and QA testing. User were engineer and QA, they liked this tool.</p><p>This project mainly uses react, <nowarptext>material-ui</nowarptext>, <nowarptext>react-router-dom</nowarptext>, webpack, by the way, this is my first time using react, I really loved it 😇</p>",
+				"links": [
+					{
+						"title": "Website link"
+					},
+					{
+						"title": "Repo link"
+					}
+				]
+			},
+			{
+				"name": "University Game Portfolio",
+				"description": "<p>The website of the university's game portfolio. It was made when I graduated from university. If you are interested in the games made by me past, you may as well go and have a look. Those games are mainly developed using Unity.</p><p>This project is developed using HTML, bootstrap and JQuery.</p>",
+				"links": [
+					{
+						"title": "Website link"
+					}
+				]
+			},
+			{
+				"name": "Heaven burns red pick simulator",
+				"description": "<p>I made a card picking simulator in my spare time to satisfy those who don’t have enough money but want to pick cards.</p><p>This project is developed using react, redux, firebase, Google sheet API, webbpack.</p>",
+				"links": [
+					{
+						"title": "網頁連結"
+					}
+				]
+			}
+		],
+		"description": "<p>I don't know where I've seen a sentence: \"People who learn programming must do side projects.\" Although I think this sentence is a bit extreme, I have to say that developing side project is indeed a lot of benefits (myself experience), the only thing to worry about is how to allocate your time.</p><p>The following content is the side projects I developed in my spare time (the later in the order, the learlier), some are developed for some special purposes, some are purely developed for fun, and no matter what kind, On the way to development, I can always learn new knowledge and experience new feelings.</p>"
+	},
+	"contact": {
+		"title": "Contact",
+		"methods": [
+			{
+				"name": "Email:",
+				"description": "<p>If you want to contact me, please send an email to the above mailbox and indicate your purpose 🙂</p>"
+			},
+			{
+				"name": "LinkedIn:",
+				"description": "<p>If you want to know about my current job position, come to LinkedIn!</p>"
+			},
+			{
+				"name": "Github:",
+				"description": "<p>If you are interested in my project, come and visit my Github!</p>"
+			}
+		]
+	}
 }

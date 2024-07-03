@@ -1,6 +1,6 @@
-import React, { ComponentProps, FC } from "react";
-import { Col, Row } from "react-bootstrap";
-import { Trans, useTranslation } from "react-i18next";
+import React, {ComponentProps, FC} from "react";
+import {Col, Row} from "react-bootstrap";
+import {Trans, useTranslation} from "react-i18next";
 
 const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
@@ -9,29 +9,29 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 		{
 			titleKey: "experiences.timeline.events.0.title",
 			descriptionKey: "experiences.timeline.events.0.description",
-			timeIntervalNodes: [new Date(2022,5), "Current"]
+			timeIntervalNodes: [new Date(2022, 5), "Current"]
 		},
 		{
 			titleKey: "experiences.timeline.events.1.title",
 			descriptionKey: "experiences.timeline.events.1.description",
-			timeIntervalNodes: [new Date(2019,8), new Date(2022,2)]
+			timeIntervalNodes: [new Date(2019, 8), new Date(2022, 2)]
 		},
 		{
 			titleKey: "experiences.timeline.events.2.title",
 			descriptionKey: "experiences.timeline.events.2.description",
-			timeIntervalNodes: [new Date(2014,9), new Date(2018,6)]
+			timeIntervalNodes: [new Date(2014, 9), new Date(2018, 6)]
 		}
 	);
 	return (
 		<section {...other} className="text-light my-5">
 			<header>
-				<h1 className="text-center text-uppercase">
+				<h1 className="text-uppercase">
 					{t("experiences.title")}
 				</h1>
 			</header>
-			<Row>
+			<Row className="mt-4">
 				<Col xs={12}>
-					<Timeline items={timelineItemData}/>
+					<Timeline items={timelineItemData} />
 				</Col>
 			</Row>
 		</section>
@@ -48,7 +48,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 			position: "relative"
 		}}>
 			{/** Vertical line on center */}
-			<div 
+			<div
 				style={{
 					position: "absolute",
 					width: "2px",
@@ -61,7 +61,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 			{
 				items.map((item, index) => {
 					return (
-						<div 
+						<div
 							key={index}
 							style={{
 								position: "relative",
@@ -69,7 +69,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 							}}
 						>
 							{/** Block with title and description */}
-							<div 
+							<div
 								style={{
 									padding: "0.5rem",
 									textAlign: "start",
@@ -77,7 +77,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 								}}
 							>
 								{/** Title block */}
-								<div 
+								<div
 									style={{
 										position: "relative",
 										display: "inline-block",
@@ -89,7 +89,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 									}}
 								>
 									{/** Time interval */}
-									<i 
+									<i
 										style={{
 											position: "absolute",
 											top: "-1.2rem",
@@ -100,7 +100,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 									>
 										{
 											item.timeIntervalNodes.map(node => {
-												return (node instanceof Date)? `${node.getFullYear()}/${node.getMonth()}`: node; 
+												return (node instanceof Date) ? `${node.getFullYear()}/${node.getMonth()}` : node;
 											}).join(" - ")
 										}
 									</i>
@@ -109,22 +109,22 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 										{t(item.titleKey)}
 									</h5>
 									{/** Triangle in corner  */}
-									<div 
+									<div
 										style={{
 											position: "absolute",
 											top: 0,
 											borderStyle: "solid",
-											left: "-10px",
+											left: "-9px",
 											borderColor: "transparent white transparent transparent",
 											borderWidth: "0 10px 10px 0",
 										}}
 									/>
 								</div>
 								{/** Description */}
-								<Trans i18nKey={item.descriptionKey} components={{p: <p style={{marginTop: "0.2rem", textAlign: "start"}}/>}}/>
+								<Trans i18nKey={item.descriptionKey} components={{p: <p style={{marginTop: "0.2rem"}} />, ul: <ul />, li: <li />}} />
 							</div>
 							{/** Circle on vertical line */}
-							<div 
+							<div
 								style={{
 									position: "absolute",
 									backgroundColor: "black",
@@ -153,5 +153,5 @@ interface ITimelineProps {
 interface ITimelineItem {
 	titleKey: string;
 	descriptionKey: string;
-	timeIntervalNodes: Array<Date|string>;
+	timeIntervalNodes: Array<Date | string>;
 }
