@@ -1,16 +1,15 @@
-import React, { ComponentProps, FC, Fragment, ReactElement } from "react";
-import { Col, ProgressBar, Row, Stack } from "react-bootstrap";
-import { Trans, useTranslation } from "react-i18next";
-import TypescriptLogo from "./../../assets/images/skillIcons/typescript-logo.svg";
-import PixijsLogo from "./../../assets/images/skillIcons/pixijs-text.svg";
-import UnityLogo from "./../../assets/images/skillIcons/unity-logo.svg";
-import ReactLogo from "./../../assets/images/skillIcons/react-logo.svg";
-import WebpackLogo from "./../../assets/images/skillIcons/webpack-logo.svg";
-import HtmlLogo from "./../../assets/images/skillIcons/html5-logo.svg";
-import CssLogo from "./../../assets/images/skillIcons/css3-logo.svg";
-import HeartIcon from "bootstrap-icons/icons/heart.svg";
 import BookIcon from "bootstrap-icons/icons/book.svg";
+import HeartIcon from "bootstrap-icons/icons/heart.svg";
 import PeopleIcon from "bootstrap-icons/icons/people.svg";
+import React, {ComponentProps, FC, Fragment, ReactElement} from "react";
+import {Col, ProgressBar, Row, Stack} from "react-bootstrap";
+import {useTranslation} from "react-i18next";
+import CocosCreatorLogo from "./../../assets/images/skillIcons/cocos-creator-logo.svg";
+import CssLogo from "./../../assets/images/skillIcons/css3-logo.svg";
+import PixijsLogo from "./../../assets/images/skillIcons/pixijs-text.svg";
+import ReactLogo from "./../../assets/images/skillIcons/react-logo.svg";
+import UnityLogo from "./../../assets/images/skillIcons/unity-logo.svg";
+import WebpackLogo from "./../../assets/images/skillIcons/webpack-logo.svg";
 
 const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
@@ -21,22 +20,22 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 			descriptionKey: "skills.gameDevSkills.description",
 			subSkills: [
 				{
-					nameKey:"skills.gameDevSkills.subSkills.0.name",
+					nameKey: "skills.gameDevSkills.subSkills.0.name",
 					descriptionKey: "skills.gameDevSkills.subSkills.0.description",
-					icon: <TypescriptLogo width="5rem" height="5rem"/>,
+					icon: <CocosCreatorLogo width="5rem" height="5rem" />,
 					proficiency: 90
 				},
 				{
 					nameKey: "skills.gameDevSkills.subSkills.1.name",
 					descriptionKey: "skills.gameDevSkills.subSkills.1.description",
-					icon: <PixijsLogo width="5rem" height="5rem"/>,
-					proficiency: 85
+					icon: <PixijsLogo width="5rem" height="5rem" />,
+					proficiency: 80
 				},
 				{
 					nameKey: "skills.gameDevSkills.subSkills.2.name",
 					descriptionKey: "skills.gameDevSkills.subSkills.2.description",
-					icon: <UnityLogo width="5rem" height="5rem"/>,
-					proficiency: 70
+					icon: <UnityLogo width="5rem" height="5rem" />,
+					proficiency: 65
 				}
 			]
 		},
@@ -47,26 +46,20 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 				{
 					nameKey: "skills.webDevSkills.subSkills.0.name",
 					descriptionKey: "skills.webDevSkills.subSkills.0.description",
-					icon: <ReactLogo width="5rem" height="5rem"/>,
-					proficiency: 75
+					icon: <ReactLogo width="5rem" height="5rem" />,
+					proficiency: 50
 				},
 				{
 					nameKey: "skills.webDevSkills.subSkills.1.name",
 					descriptionKey: "skills.webDevSkills.subSkills.1.description",
-					icon: <WebpackLogo width="5rem" height="5rem"/>,
-					proficiency: 75
+					icon: <WebpackLogo width="5rem" height="5rem" />,
+					proficiency: 40
 				},
 				{
 					nameKey: "skills.webDevSkills.subSkills.2.name",
 					descriptionKey: "skills.webDevSkills.subSkills.2.description",
-					icon: <HtmlLogo width="5rem" height="5rem"/>,
-					proficiency: 90
-				},
-				{
-					nameKey: "skills.webDevSkills.subSkills.3.name",
-					descriptionKey: "skills.webDevSkills.subSkills.3.description",
-					icon: <CssLogo width="5rem" height="5rem"/>,
-					proficiency: 70
+					icon: <CssLogo width="5rem" height="5rem" />,
+					proficiency: 30
 				}
 			]
 		},
@@ -77,32 +70,32 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 				{
 					nameKey: "skills.generalSkills.subSkills.0.name",
 					descriptionKey: "skills.generalSkills.subSkills.0.description",
-					icon: <HeartIcon width="5rem" height="5rem"/>,
+					icon: <HeartIcon width="5rem" height="5rem" />,
 					proficiency: 100
 				},
 				{
 					nameKey: "skills.generalSkills.subSkills.1.name",
 					descriptionKey: "skills.generalSkills.subSkills.1.description",
-					icon: <PeopleIcon width="5rem" height="5rem"/>,
+					icon: <PeopleIcon width="5rem" height="5rem" />,
 					proficiency: 100
 				},
 				{
 					nameKey: "skills.generalSkills.subSkills.2.name",
 					descriptionKey: "skills.generalSkills.subSkills.2.description",
-					icon: <BookIcon width="5rem" height="5rem"/>,
+					icon: <BookIcon width="5rem" height="5rem" />,
 					proficiency: 100
 				}
 			]
 		}
 	];
-	return(
+	return (
 		<section {...other} className="text-light my-5">
 			<header>
-				<h1 className="text-center text-uppercase" >
+				<h1 className="text-uppercase">
 					{t("skills.title")}
 				</h1>
 			</header>
-			<SkillGroup groups={skillGroupData}/>
+			<SkillGroup groups={skillGroupData} />
 		</section>
 	);
 };
@@ -113,17 +106,15 @@ const SkillGroup: FC<ISkillGroupProps> = (props: ISkillGroupProps) => {
 	const {groups} = props;
 	const [t] = useTranslation();
 	return (
-		<Fragment>
+		<Row className="mt-0 gy-4">
 			{
-				groups.map((groupData, index)=>(
-					<Row 
-						key={index} 
-						className={`my-3 gy-3 ${index % 2 === 0? "flex-md-row": "flex-md-row-reverse"}`}
-					>
-						<Col md={6}>
+				groups.map((groupData, index) => (
+					<Fragment key={index}>
+						<Col md={12} lg={4}>
+							<h3 className="mb-3">{t(groupData.titleKey)}</h3>
 							<Stack gap={3}>
 								{
-									groupData.subSkills.map((data, index)=>(
+									groupData.subSkills.map((data, index) => (
 										<div key={index}>
 											{data.icon}
 											<div className="d-inline-block align-middle" style={{
@@ -132,12 +123,12 @@ const SkillGroup: FC<ISkillGroupProps> = (props: ISkillGroupProps) => {
 											}}>
 												<h5>{t(data.nameKey)}</h5>
 												<p>{t(data.descriptionKey)}</p>
-												<ProgressBar 
-													label={data.proficiency} 
-													visuallyHidden 
-													striped 
-													variant="info" 
-													now={data.proficiency} 
+												<ProgressBar
+													label={data.proficiency}
+													visuallyHidden
+													striped
+													variant="info"
+													now={data.proficiency}
 													className="bg-dark"
 													style={{
 														height: "4px"
@@ -149,14 +140,10 @@ const SkillGroup: FC<ISkillGroupProps> = (props: ISkillGroupProps) => {
 								}
 							</Stack>
 						</Col>
-						<Col md={6} className="my-md-auto">
-							<h3>{t(groupData.titleKey)}</h3>
-							<Trans i18nKey={groupData.descriptionKey} components={{p: <p/>}}/>
-						</Col>
-					</Row>
+					</Fragment>
 				))
 			}
-		</Fragment>
+		</Row>
 	);
 };
 

@@ -1,6 +1,6 @@
-import React, { Fragment, useEffect, useState } from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
+import React, {Fragment, useEffect, useState} from "react";
+import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {useTranslation} from "react-i18next";
 import Overview from "./Overview";
 import Skills from "./Skills";
 import Experiences from "./Experiences";
@@ -21,7 +21,7 @@ const MainPage = () => {
 		setNavbarExpanded(!navbarExpanded);
 	};
 	const handleNavbarDropdownSelect = (e: string | null) => {
-		if(e !== null){
+		if(e !== null) {
 			i18n.changeLanguage(e);
 		}
 	};
@@ -36,8 +36,8 @@ const MainPage = () => {
 				{id: "projects", offsetTop: document.getElementById("projects")?.offsetTop || 0},
 				{id: "contact", offsetTop: document.getElementById("contact")?.offsetTop || 0}
 			];
-			for( let i = 0; i < navTargetList.length; i++){
-				if(Math.abs(navTargetList[i].offsetTop - window.scrollY) <= navbarHeight * 2){
+			for(let i = 0; i < navTargetList.length; i++) {
+				if(Math.abs(navTargetList[i].offsetTop - window.scrollY) <= navbarHeight * 2) {
 					setCurrentSection(navTargetList[i].id);
 					break;
 				}
@@ -65,43 +65,43 @@ const MainPage = () => {
 		  			}
 		  		`}
 			</style>
-			<Navbar 
-				expanded={navbarExpanded} 
-				onSelect={handleNavbarSelect} 
-				fixed="top" 
-				expand="md" 
-				bg="black" 
+			<Navbar
+				expanded={navbarExpanded}
+				onSelect={handleNavbarSelect}
+				fixed="top"
+				expand="md"
+				bg="black"
 				variant="dark"
 			>
 				<Container>
 					<Navbar.Brand onClick={handleNavbarBrandClick} href="#overview">
 						Portfolio
 					</Navbar.Brand>
-					<Navbar.Toggle onClick={handleNavbarToggleClick}/>
+					<Navbar.Toggle onClick={handleNavbarToggleClick} />
 					<Navbar.Collapse className="justify-content-end">
 						<Nav>
-							<Nav.Link href="#skills" active={currentSection==="skills"}>
+							<Nav.Link href="#skills" active={currentSection === "skills"}>
 								{t("navbar.skills")}
 							</Nav.Link>
-							<Nav.Link href="#experiences" active={currentSection==="experiences"}>
+							<Nav.Link href="#experiences" active={currentSection === "experiences"}>
 								{t("navbar.experiences")}
 							</Nav.Link>
-							<Nav.Link href="#projects" active={currentSection==="projects"}>
+							<Nav.Link href="#projects" active={currentSection === "projects"}>
 								{t("navbar.projects")}
 							</Nav.Link>
-							<Nav.Link href="#contact" active={currentSection==="contact"}>
+							<Nav.Link href="#contact" active={currentSection === "contact"}>
 								{t("navbar.contact")}
 							</Nav.Link>
-							<NavDropdown 
+							<NavDropdown
 								title={
 									<Fragment>
 										<GlobeIcon width="1rem" height="1rem" style={{
 											verticalAlign: "text-bottom"
-										}}/>
+										}} />
 										{t("navbar.language")}
-									</Fragment> 
-								} 
-								menuVariant="dark" 
+									</Fragment>
+								}
+								menuVariant="dark"
 								onSelect={handleNavbarDropdownSelect}
 							>
 								<NavDropdown.Item eventKey={"zh-Hant"}>
@@ -116,11 +116,11 @@ const MainPage = () => {
 				</Container>
 			</Navbar>
 			<Container as="main">
-				<Overview id="overview"/>
-				<Skills id="skills"/>
-				<Experiences id="experiences"/>
-				<Projects id="projects"/>
-				<Contact id="contact"/>
+				<Overview id="overview" />
+				<Skills id="skills" />
+				<Experiences id="experiences" />
+				<Projects id="projects" />
+				<Contact id="contact" />
 			</Container>
 		</Fragment>
 	);

@@ -12,11 +12,11 @@ const resources: Resource = {
 	}
 };
 
-i18n.use(initReactI18next).init({
+i18n.use( initReactI18next ).init( {
 	fallbackLng: "zh-Hant",
 	interpolation: {
 		escapeValue: false, // not needed for react as it escapes by default
 	},
 	resources: resources,
 	debug: true
-});
+} );

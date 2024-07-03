@@ -1,11 +1,10 @@
-
-import React, { Fragment } from "react";
+import React, {Fragment} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./i18n/config";
 import MainPage from "./pages/main";
 
 const App = () => {
-	return( 
+	return (
 		<Fragment>
 			<style type="text/css">
 				{`
@@ -16,17 +15,17 @@ const App = () => {
 			</style>
 			{/** Page */}
 			<div className="min-vh-100 pb-4">
-				<MainPage/>
+				<MainPage />
 			</div>
 			{/** Footer */}
-			<footer 
+			<footer
 				style={{
 					height: "2rem",
 					marginTop: "-2rem"
 				}}
 			>
 				<p className="text-light text-center">
-					©2022 YY Portfolio
+					©2024 Shane Portfolio
 				</p>
 			</footer>
 		</Fragment>

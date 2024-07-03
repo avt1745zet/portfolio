@@ -1,6 +1,6 @@
-import React, { ComponentProps, FC } from "react";
-import { Col, Row } from "react-bootstrap";
-import { Trans, useTranslation } from "react-i18next";
+import React, {ComponentProps, FC} from "react";
+import {Col, Row} from "react-bootstrap";
+import {Trans, useTranslation} from "react-i18next";
 
 const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"section">) => {
 	const {...other} = props;
@@ -9,32 +9,29 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 		{
 			titleKey: "experiences.timeline.events.0.title",
 			descriptionKey: "experiences.timeline.events.0.description",
-			timeIntervalNodes: [new Date(2022,5), "Current"]
+			timeIntervalNodes: [new Date(2022, 5), "Current"]
 		},
 		{
 			titleKey: "experiences.timeline.events.1.title",
 			descriptionKey: "experiences.timeline.events.1.description",
-			timeIntervalNodes: [new Date(2019,8), new Date(2022,2)]
+			timeIntervalNodes: [new Date(2019, 8), new Date(2022, 2)]
 		},
 		{
 			titleKey: "experiences.timeline.events.2.title",
 			descriptionKey: "experiences.timeline.events.2.description",
-			timeIntervalNodes: [new Date(2014,9), new Date(2018,6)]
+			timeIntervalNodes: [new Date(2014, 9), new Date(2018, 6)]
 		}
 	);
 	return (
 		<section {...other} className="text-light my-5">
 			<header>
-				<h1 className="text-center text-uppercase">
+				<h1 className="text-uppercase">
 					{t("experiences.title")}
 				</h1>
 			</header>
-			<Row>
-				<Col xs={12} lg={6}>
-					<Timeline items={timelineItemData}/>
-				</Col>
-				<Col xs={12} lg={6} className="align-self-center">
-					<Trans i18nKey="experiences.description" components={{p: <p/>}}/>
+			<Row className="mt-4">
+				<Col xs={12}>
+					<Timeline items={timelineItemData} />
 				</Col>
 			</Row>
 		</section>
@@ -51,49 +48,36 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 			position: "relative"
 		}}>
 			{/** Vertical line on center */}
-			<div 
+			<div
 				style={{
 					position: "absolute",
 					width: "2px",
 					backgroundColor: "white",
 					top: "-1rem",
 					bottom: 0,
-					left: "calc(50% - 1px)"
+					left: "-1px"
 				}}
 			/>
 			{
 				items.map((item, index) => {
-					const isEvenNumber = (num: number) => {
-						return num % 2 === 0;
-					};
 					return (
-						<div 
+						<div
 							key={index}
 							style={{
 								position: "relative",
-								marginBlock: "1rem",
-								...isEvenNumber(index)? {
-									marginLeft: "50%"
-								}: {
-									marginRight: "50%"
-								}
+								marginBlock: "1rem"
 							}}
 						>
 							{/** Block with title and description */}
-							<div 
+							<div
 								style={{
 									padding: "0.5rem",
-									...isEvenNumber(index)? {
-										textAlign: "start",
-										marginLeft: "1rem"
-									}: {
-										textAlign: "end",
-										marginRight: "1rem"
-									}
+									textAlign: "start",
+									marginLeft: "1rem"
 								}}
 							>
 								{/** Title block */}
-								<div 
+								<div
 									style={{
 										position: "relative",
 										display: "inline-block",
@@ -101,30 +85,22 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 										borderWidth: "0px",
 										backgroundColor: "white",
 										padding: "0.3rem",
-										...isEvenNumber(index)? {
-											borderRadius: "0 10px 10px 10px",
-										}: {
-											borderRadius: "10px 0 10px 10px",
-										}
+										borderRadius: "0 10px 10px 10px",
 									}}
 								>
 									{/** Time interval */}
-									<i 
+									<i
 										style={{
 											position: "absolute",
-											top: "-1rem",
+											top: "-1.2rem",
 											fontSize: "small",
 											whiteSpace: "nowrap",
-											...isEvenNumber(index)? {
-												left: 0,
-											}: {
-												right: 0,
-											}
+											left: 0,
 										}}
 									>
 										{
 											item.timeIntervalNodes.map(node => {
-												return (node instanceof Date)? `${node.getFullYear()}/${node.getMonth()}`: node; 
+												return (node instanceof Date) ? `${node.getFullYear()}/${node.getMonth()}` : node;
 											}).join(" - ")
 										}
 									</i>
@@ -133,28 +109,22 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 										{t(item.titleKey)}
 									</h5>
 									{/** Triangle in corner  */}
-									<div 
+									<div
 										style={{
 											position: "absolute",
 											top: 0,
 											borderStyle: "solid",
-											...isEvenNumber(index)? {
-												left: "-10px",
-												borderColor: "transparent white transparent transparent",
-												borderWidth: "0 10px 10px 0",
-											}: {
-												right: "-10px",
-												borderColor: "transparent transparent transparent white",
-												borderWidth: "0 0 10px 10px",
-											}
+											left: "-9px",
+											borderColor: "transparent white transparent transparent",
+											borderWidth: "0 10px 10px 0",
 										}}
 									/>
 								</div>
 								{/** Description */}
-								<Trans i18nKey={item.descriptionKey} components={{p: <p style={{textAlign: "start"}}/>}}/>
+								<Trans i18nKey={item.descriptionKey} components={{p: <p style={{marginTop: "0.2rem"}} />, ul: <ul />, li: <li />}} />
 							</div>
 							{/** Circle on vertical line */}
-							<div 
+							<div
 								style={{
 									position: "absolute",
 									backgroundColor: "black",
@@ -165,11 +135,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 									borderWidth: "4px",
 									width: "1.5rem",
 									height: "1.5rem",
-									...isEvenNumber(index)? {
-										left: "-0.75rem",
-									}: {
-										right: "-0.75rem",
-									}
+									left: "-0.75rem",
 								}}
 							/>
 						</div>
@@ -187,5 +153,5 @@ interface ITimelineProps {
 interface ITimelineItem {
 	titleKey: string;
 	descriptionKey: string;
-	timeIntervalNodes: Array<Date|string>;
+	timeIntervalNodes: Array<Date | string>;
 }
