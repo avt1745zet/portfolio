@@ -25,12 +25,12 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 	return (
 		<section {...other} className="text-light my-5">
 			<header>
-				<h1 className="text-center text-uppercase">
+				<h1 className="text-uppercase">
 					{t("experiences.title")}
 				</h1>
 			</header>
-			<Row>
-				<Col xs={12}>
+			<Row className="mt-4">
+				<Col  xs={12}>
 					<Timeline items={timelineItemData}/>
 				</Col>
 			</Row>
@@ -114,7 +114,7 @@ const Timeline: FC<ITimelineProps> = (props: ITimelineProps) => {
 											position: "absolute",
 											top: 0,
 											borderStyle: "solid",
-											left: "-10px",
+											left: "-9px",
 											borderColor: "transparent white transparent transparent",
 											borderWidth: "0 10px 10px 0",
 										}}

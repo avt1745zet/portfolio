@@ -1,9 +1,9 @@
 import React, { ComponentProps, FC } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import { Trans, useTranslation } from "react-i18next";
-import ProtfolioCover from "./../../assets/images/projectCovers/project-cover-portfolio.png";
-import FindDifferentColorsCover from "./../../assets/images/projectCovers/project-cover-find-different-colors.png";
 import ColorGeneratorCover from "./../../assets/images/projectCovers/project-cover-color-generator.png";
+import FindDifferentColorsCover from "./../../assets/images/projectCovers/project-cover-find-different-colors.png";
+import ProtfolioCover from "./../../assets/images/projectCovers/project-cover-portfolio.png";
 import ReelToolsCover from "./../../assets/images/projectCovers/project-cover-reel-tools.png";
 import UniversityGamePortfolioCover from "./../../assets/images/projectCovers/project-cover-university-game-portfolio.png";
 
@@ -74,11 +74,11 @@ const Projects: FC<ComponentProps<"section">> = (props: ComponentProps<"section"
 	return (
 		<section {...other} className="text-light my-5">
 			<header>
-				<h1 className="text-center text-uppercase" >
+				<h1 className="text-uppercase" >
 					<Trans i18nKey="projects.title" components={{nowarptext: <span className="text-nowrap" />}}/>
 				</h1>
 			</header>
-			<Row className="g-3">
+			<Row className="mt-4 g-3">
 				<Col sm={12}>
 					<Trans i18nKey="projects.description" components={{p: <p/>}}/>
 				</Col>

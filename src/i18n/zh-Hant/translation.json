@@ -2,7 +2,7 @@
     "navbar": {
         "skills": "技能",
         "experiences": "經歷",
-        "projects": "業餘專案",
+        "projects": "Side Projects",
         "contact": "聯絡方式",
         "language": "語言",
         "languages": {
@@ -12,15 +12,15 @@
     },
     "overview": {
         "quickBio": "當個 clean coder.",
-        "introduction": "<p><big>哈囉我是YY</big>，是一名遊戲前端工程師，工作年資兩年六個月。</p><p>主要專業技能是開發遊戲前端，使用 TypeScript、Pixi.js、Unity，熟悉 OOP，略懂一些 Design Pattern，參與過跑 Scurm 的開發團隊。興趣是做遊戲、玩遊戲、看書、看動畫。自認為我的優點是對程式碼很嚴謹，無論是類別間的關係，或是變數的命名；缺點則是有時為求可讀性、乾淨，花了不少時間在幾行程式碼上⋯⋯。夢想是未來能找到一群志同道合的人開發獨立遊戲。</p>"
+        "introduction": "<p><big>哈囉我是 Shane </big>，是一名遊戲前端工程師，工作年資兩年六個月。</p><p>主要專業技能是開發遊戲前端，使用 TypeScript、Pixi.js、Unity，熟悉 OOP，略懂一些 Design Pattern，參與過跑 Scurm 的開發團隊。興趣是做遊戲、玩遊戲、看書、看動畫。自認為我的優點是對程式碼很嚴謹，無論是類別間的關係，或是變數的命名；缺點則是有時為求可讀性、乾淨，花了不少時間在幾行程式碼上⋯⋯。夢想是未來能找到一群志同道合的人開發獨立遊戲。</p>"
     },
     "skills": {
         "title": "技能",
         "gameDevSkills": {
             "subSkills": [
                 {
-                    "name": "TypeScript",
-                    "description": "JavaScript 的嚴格超集，我尤為喜歡有型別檢查的部分。"
+                    "name": "Cocos Creator",
+                    "description": "2年 Cocos Creator 開發經驗，使用它開發過真人棋牌遊戲及小遊戲，熟悉其元件和相關的優化。"
                 },
                 {
                     "name": "Pixi.js",
@@ -43,10 +43,6 @@
                 {
                     "name": "Webpack",
                     "description": "雖然配置的部分有點小複雜，但不能否認他是一個打包前端的好東西。"
-                },
-                {
-                    "name": "HTML",
-                    "description": "網頁的骨架。"
                 },
                 {
                     "name": "CSS",
@@ -95,7 +91,7 @@
         }
     },
     "projects": {
-        "title": "業餘專案<nowarptext>（Side Project）</nowarptext>",
+        "title": "Side Projects",
         "type": "類型：",
         "projectType": [
             "遊戲",

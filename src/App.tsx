@@ -26,7 +26,7 @@ const App = () => {
 				}}
 			>
 				<p className="text-light text-center">
-					©2024 YY Portfolio
+					©2024 Shane Portfolio
 				</p>
 			</footer>
 		</Fragment>
