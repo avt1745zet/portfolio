@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import * as path from "path";
-import { Configuration } from "webpack";
+import {Configuration} from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import CopyWebpackPlugin from "copy-webpack-plugin";
 const InjectBodyPlugin = require("inject-body-webpack-plugin").default;
