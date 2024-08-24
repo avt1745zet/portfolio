@@ -152,15 +152,6 @@
 						"title": "Website link"
 					}
 				]
-			},
-			{
-				"name": "Heaven burns red pick simulator",
-				"description": "<p>I made a card picking simulator in my spare time to satisfy those who don’t have enough money but want to pick cards.</p><p>This project is developed using react, redux, firebase, Google sheet API, webbpack.</p>",
-				"links": [
-					{
-						"title": "網頁連結"
-					}
-				]
 			}
 		],
 		"description": "<p>I don't know where I've seen a sentence: \"People who learn programming must do side projects.\" Although I think this sentence is a bit extreme, I have to say that developing side project is indeed a lot of benefits (myself experience), the only thing to worry about is how to allocate your time.</p><p>The following content is the side projects I developed in my spare time (the later in the order, the learlier), some are developed for some special purposes, some are purely developed for fun, and no matter what kind, On the way to development, I can always learn new knowledge and experience new feelings.</p>"
