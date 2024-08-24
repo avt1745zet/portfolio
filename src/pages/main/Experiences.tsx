@@ -9,7 +9,7 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 		{
 			titleKey: "experiences.timeline.events.0.title",
 			descriptionKey: "experiences.timeline.events.0.description",
-			timeIntervalNodes: [new Date(2022, 5), "Current"]
+			timeIntervalNodes: [new Date(2022, 5), new Date(2024, 8)]
 		},
 		{
 			titleKey: "experiences.timeline.events.1.title",
