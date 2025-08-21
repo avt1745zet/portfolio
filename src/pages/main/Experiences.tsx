@@ -9,7 +9,7 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 		{
 			titleKey: "experiences.timeline.events.0.title",
 			descriptionKey: "experiences.timeline.events.0.description",
-			timeIntervalNodes: [new Date(2022, 5), new Date(2024, 8)]
+			timeIntervalNodes: [new Date(2014, 9), new Date(2018, 6)]
 		},
 		{
 			titleKey: "experiences.timeline.events.1.title",
@@ -19,7 +19,12 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 		{
 			titleKey: "experiences.timeline.events.2.title",
 			descriptionKey: "experiences.timeline.events.2.description",
-			timeIntervalNodes: [new Date(2014, 9), new Date(2018, 6)]
+			timeIntervalNodes: [new Date(2022, 5), new Date(2024, 8)]
+		},
+		{
+			titleKey: "experiences.timeline.events.3.title",
+			descriptionKey: "experiences.timeline.events.3.description",
+			timeIntervalNodes: [new Date(2024, 9), t("experiences.timeline.today")]
 		}
 	);
 	return (
@@ -31,7 +36,7 @@ const Experiences: FC<ComponentProps<"section">> = (props: ComponentProps<"secti
 			</header>
 			<Row className="mt-4">
 				<Col xs={12}>
-					<Timeline items={timelineItemData} />
+					<Timeline items={timelineItemData.reverse()} />
 				</Col>
 			</Row>
 		</section>
