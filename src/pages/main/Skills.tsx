@@ -23,46 +23,22 @@ const Skills: FC<ComponentProps<"section">> = (props: ComponentProps<"section">)
 					nameKey: "skills.gameDevSkills.subSkills.0.name",
 					descriptionKey: "skills.gameDevSkills.subSkills.0.description",
 					icon: <CocosCreatorLogo width="5rem" height="5rem" />,
-					proficiency: 90
+					proficiency: 95
 				},
 				{
 					nameKey: "skills.gameDevSkills.subSkills.1.name",
 					descriptionKey: "skills.gameDevSkills.subSkills.1.description",
 					icon: <PixijsLogo width="5rem" height="5rem" />,
-					proficiency: 80
+					proficiency: 60
 				},
 				{
 					nameKey: "skills.gameDevSkills.subSkills.2.name",
 					descriptionKey: "skills.gameDevSkills.subSkills.2.description",
 					icon: <UnityLogo width="5rem" height="5rem" />,
-					proficiency: 65
-				}
-			]
-		},
-		{
-			titleKey: "skills.webDevSkills.title",
-			descriptionKey: "skills.webDevSkills.description",
-			subSkills: [
-				{
-					nameKey: "skills.webDevSkills.subSkills.0.name",
-					descriptionKey: "skills.webDevSkills.subSkills.0.description",
-					icon: <ReactLogo width="5rem" height="5rem" />,
 					proficiency: 50
-				},
-				{
-					nameKey: "skills.webDevSkills.subSkills.1.name",
-					descriptionKey: "skills.webDevSkills.subSkills.1.description",
-					icon: <WebpackLogo width="5rem" height="5rem" />,
-					proficiency: 40
-				},
-				{
-					nameKey: "skills.webDevSkills.subSkills.2.name",
-					descriptionKey: "skills.webDevSkills.subSkills.2.description",
-					icon: <CssLogo width="5rem" height="5rem" />,
-					proficiency: 30
 				}
 			]
-		},
+		}, 
 		{
 			titleKey: "skills.generalSkills.title",
 			descriptionKey: "skills.generalSkills.description",
@@ -110,7 +86,7 @@ const SkillGroup: FC<ISkillGroupProps> = (props: ISkillGroupProps) => {
 			{
 				groups.map((groupData, index) => (
 					<Fragment key={index}>
-						<Col md={12} lg={4}>
+						<Col md={12} lg={6}>
 							<h3 className="mb-3">{t(groupData.titleKey)}</h3>
 							<Stack gap={3}>
 								{
